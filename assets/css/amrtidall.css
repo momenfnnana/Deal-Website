@@ -1,0 +1,54 @@
+.text-head {
+  text-align: right;
+  font-size: 30px;
+  color: #e1e316;
+  margin-bottom: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.card.my-3 {
+  height: 15rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.card {
+  -webkit-box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.point {
+  height: 4rem;
+  width: 4rem;
+  background-color: #EFE817;
+  border-radius: 50%;
+}
+
+.number-span {
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  right: 2.5rem;
+  top: 1.8rem;
+}
+
+@media (max-width: 600px) {
+  .card.my-3 {
+    border-radius: 2.1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .card.my-3 {
+    border-radius: 2.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card.my-3 {
+    border-radius: 1.5rem;
+  }
+}
+/*# sourceMappingURL=amrtidall.css.map */
