@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91.787" height="114.026" viewBox="0 0 91.787 114.026">
+  <g id="props" transform="translate(-262.575 -350.69)">
+    <rect id="Rectangle_1653" data-name="Rectangle 1653" width="14.437" height="71.496" transform="translate(337.132 393.22)" fill="#efe817"/>
+    <rect id="Rectangle_1654" data-name="Rectangle 1654" width="14.437" height="47.97" transform="translate(318.536 416.746)" fill="#efe817"/>
+    <rect id="Rectangle_1655" data-name="Rectangle 1655" width="14.437" height="33.925" transform="translate(299.941 430.791)" fill="#efe817"/>
+    <rect id="Rectangle_1656" data-name="Rectangle 1656" width="14.437" height="22.188" transform="translate(281.346 442.528)" fill="#efe817"/>
+    <rect id="Rectangle_1657" data-name="Rectangle 1657" width="14.437" height="13.113" transform="translate(262.751 451.603)" fill="#efe817"/>
+    <path id="Path_1961" data-name="Path 1961" d="M300.754,387.938l4.262-2.772-1.132-4.731-5.055-.54-2.251-3.1,1.055-4.975-4.146-2.544-3.957,3.192-3.785-.6-2.772-4.262-4.73,1.132-.542,5.055-3.1,2.251-4.975-1.054-2.544,4.145,3.192,3.957-.6,3.785-4.262,2.772,1.132,4.729,5.055.542,2.251,3.1-1.054,4.975,4.145,2.544,3.959-3.192,3.783.6,2.772,4.262,4.731-1.132.54-5.055,3.1-2.251,4.973,1.054,2.544-4.145-3.192-3.959Zm-9.37,7.974a10.51,10.51,0,1,1,2.336-14.678A10.509,10.509,0,0,1,291.383,395.912Z" transform="translate(1.997 11.921)" fill="#efe817"/>
+    <circle id="Ellipse_303" data-name="Ellipse 303" cx="7.931" cy="7.931" r="7.931" transform="matrix(0.067, -0.998, 0.998, 0.067, 278.768, 406.711)" fill="#005b6b"/>
+    <g id="Group_52949" data-name="Group 52949" transform="translate(262.575 350.69)">
+      <path id="Path_1962" data-name="Path 1962" d="M342.057,361.949c-16.929,34.36-44.4,58.414-79.482,69.731v5.391c37.192-11.531,66.262-36.713,84.07-72.862Z" transform="translate(-262.575 -342.753)" fill="#cf4518"/>
+      <g id="Group_52948" data-name="Group 52948" transform="translate(72.87)">
+        <path id="Path_1963" data-name="Path 1963" d="M318.646,378.845l5.586-28.154-18.917,21.588Z" transform="translate(-305.315 -350.69)" fill="#cf4518"/>
+      </g>
+    </g>
+  </g>
+</svg>
