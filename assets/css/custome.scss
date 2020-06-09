@@ -2,24 +2,96 @@
 body {
   font-family: "Cairo", sans-serif;
   font-size: 95%;
+  direction: rtl;
 }
 
-::placeholder{
-  color: red;
-
+.dropdown-toggle::after {
+  content: none;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
+#star-nav {
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
 }
-.logo_links {
-  display: flex;
-  flex-direction: row;
 
+#notificatio-no {
+  position: absolute;
+  background-color: #7b7b7b;
+  border-radius: 50%;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  bottom: 1px;
+  right: -3px;
+  font-size: 10px;
+  border: 1px #fff solid;
+  text-align: center;
 }
-div .row {
-  width: 100%;
+
+.fa-bell {
+  font-size: 26px;
+  color: #b8b8b8;
+}
+
+#profile-nav {
+  padding: 0 0 0 0;
+}
+
+#btn-nav {
+  color: #807b00;
+  background-color: #e2e417;
+  border: none;
+  border-radius: 300px;
+  padding: 0.575rem 2rem;
+}
+
+.navbar-toggler {
+  border: 0px solid transparent;
+}
+
+.navbar-toggler:focus {
+  outline: 1px none;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.bg-light {
+  background-color: #fbfbfb !important;
+  box-shadow: 0 3 22 0 #000000;
+  min-height: 17vh;
+}
+
+.link-nav {
+  font-size: 1.3em;
+  padding: 0 0 0 0;
+}
+
+#img-brand {
+  height: 90px;
+}
+
+#welcome-txt {
+  font-size: 13px;
+  color: #606261;
+  font-weight: bolder;
+}
+
+#type-member {
+  font-size: 9px;
+  color: #a7a7a7;
+}
+
+.dropdown {
+  position: inherit;
+}
+
+.menu {
+  top: 7.6rem !important;
+  z-index: 1;
+  background-color: #fff !important;
 }
 
 .menu::before {
@@ -76,86 +148,8 @@ div .row {
   padding: 0;
   border: none;
 }
-.follow_us {
-  display: flex;
-  flex-direction: row;
-  width: 222.71px;
-  justify-content: space-around;
-  align-items: center;
-  /* margin-right: 162px; */
-  margin-left: 100px;
-}
 
-.follow_us_text {
-  color: #919191;
-  font-weight: 625;
-  margin-top: 15px;
-}
-
-/*# sourceMappingURL=custome.css.map */
-.my-3 {
-  color: #646464;
-  font-size: 24px;
-  font-weight: bold;
-}
-.image-form {
-  background-image: url("../images/sign-up.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 700px;
-  max-width: 100%;
-}
-.image-side {
-  background-color: #efefef;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.image-side a {
-  align-self: flex-start;
-  background-size: cover;
-  margin-bottom: 0;
-}
-.did-forget-pass {
-  color: #111111;
-  font-size: 40px;
-  font-weight: bold;
-}
-.form-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.form-side .title {
-  font-size: 40px;
-  font-weight: bold;
-  color: #7e7e7e;
-}
-.form-side p {
-  color: #7e7e7e;
-  font-size: 30px;
-  font-weight: 600;
-}
-.form-side .txt-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.button-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 40%;
-  align-items: center;
-  margin-bottom: 135px;
-}
-.button {
+.notification-details {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 0.5rem !important;
@@ -301,23 +295,7 @@ button:focus {
 @media only screen and (min-width: 666px) {
   .user-profile {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
     align-items: center;
-    margin-bottom: 0;
-  }
-  .submit-button {
-    font-weight: bold;
-    padding: 13px 120px 13px 120px;
-  }
-  .form-side {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 350px;
   }
   #star-nav {
     bottom: -2px;
