@@ -1,0 +1,99 @@
+.container-fluid {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.site-page {
+  margin-top: 3.5rem;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head p {
+  font-size: 41px;
+  font-weight: bold;
+  color: #e2e417;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 0 30px 0 30px;
+  font-size: 16px;
+  color: #707070;
+  font-weight: 610;
+}
+
+.card {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  background-color: #f7f7ff;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card i {
+  font-size: 29px;
+  color: #707070;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 20px;
+}
+
+.discription {
+  font-size: 25px;
+  font-weight: bold;
+  color: #919191;
+  text-align: center;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .head {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .head p {
+    font-size: 28px;
+    margin-left: 15px;
+    text-align: right;
+  }
+  .btn {
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+  }
+  .card i {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+}
+/*# sourceMappingURL=Detection-points.css.map */
