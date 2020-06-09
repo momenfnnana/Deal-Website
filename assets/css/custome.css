@@ -400,18 +400,6 @@ button:focus {
             align-items: center;
     margin-bottom: 0;
   }
-  .input {
-    background-color: #efefef;
-    border-color: #b8b8b8;
-    border-radius: 10px;
-    width: 285px;
-    height: 52px;
-    text-align: end;
-    padding-right: 32px;
-    font-size: 14;
-    font-family: Cairo;
-    font-weight: 600;
-  }
   .submit-button {
     font-weight: bold;
     padding: 13px 120px 13px 120px;
