@@ -1,1 +1,110 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+h2 {
+  font-size: 1.5rem;
+}
+
+.form-control:focus {
+  color: #495057;
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: transparent;
+}
+
+.right-menu {
+  background-color: #efefef;
+  border-radius: 0.6rem !important;
+}
+
+.right-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-menu ul li {
+  padding: 0.75rem 1.2rem;
+  border-radius: 50rem !important;
+  color: #606261;
+}
+
+.right-menu ul li:hover {
+  background-color: #b8b8b8;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.card {
+  padding: 8rem 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.LT-ad-area {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.RB-ad-area {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.card-home {
+  color: #b8b8b8;
+}
+
+.carousel-caption {
+  right: 4%;
+}
+
+.text-slider {
+  background-color: #70707070;
+  border-radius: .5rem !important;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card-home {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-home {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-home {
+    min-height: 34rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-home {
+    margin-top: -14.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider-home {
+    min-height: 34rem;
+  }
+  .card-home {
+    margin-top: -16rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

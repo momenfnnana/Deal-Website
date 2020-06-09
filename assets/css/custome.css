@@ -119,6 +119,29 @@ body {
   left: 8em;
 }
 
+.btn-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #efe817 !important;
+}
+
+.btn-primary:hover {
+  background-color: #f7fa35 !important;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .dropdown-menu {
   top: 0;
   padding: 0;
@@ -129,6 +152,54 @@ body {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 0.5rem !important;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #b8b8b8;
+}
+
+::-webkit-input-placeholder {
+  color: #d2d2d2 !important;
+}
+
+:-ms-input-placeholder {
+  color: #d2d2d2 !important;
+}
+
+::-ms-input-placeholder {
+  color: #d2d2d2 !important;
+}
+
+::placeholder {
+  color: #d2d2d2 !important;
+}
+
+.search-container {
+  background-color: #fbfbfb;
+}
+
+.input-search {
+  background-color: transparent;
+}
+
+i {
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+button {
+  border: none !important;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.head-text {
+  color: #707070;
+  font-size: 1.4rem;
 }
 
 /* Extra small devices (phones, 600px and down) */

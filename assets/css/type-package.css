@@ -1,0 +1,113 @@
+h1 {
+  font-size: 1.6rem;
+  color: #707070;
+  margin-bottom: 1.5rem;
+}
+
+ol {
+  padding: 0 15px 15px 0;
+}
+
+p {
+  margin-top: -1rem;
+}
+
+.text-head {
+  text-align: right;
+  font-size: 2.2rem;
+  color: #e1e316;
+  margin-bottom: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.card {
+  padding: 0 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-bottom: 3rem;
+}
+
+.head-package {
+  font-size: 2rem;
+}
+
+.shadow {
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.modal-content {
+  border: none;
+  border-radius: .5rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.head-modal {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.text-modal {
+  font-size: 1.1rem;
+  color: #707070;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+#btn-nav {
+  color: #fff;
+  background-color: #e2e417;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary:hover {
+  background-color: #f7fa35 !important;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.discount-label {
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  background-color: #707070;
+  border: 1px #EFEFEF solid;
+  color: #fff;
+  padding: 0.5em 2em 0.5em 1em;
+  font-size: 9px;
+  border-bottom-right-radius: 50rem;
+  border-top-right-radius: 50rem;
+  border-left: none;
+}
+
+strong {
+  font-size: 1.2rem;
+}
+
+#order-details {
+  color: #919191;
+}
+
+#show-price {
+  color: #CACF2B;
+}
+/*# sourceMappingURL=type-package.css.map */

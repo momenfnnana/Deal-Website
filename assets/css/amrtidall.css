@@ -17,6 +17,7 @@
 .card {
   -webkit-box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
+  border: none;
 }
 
 .point {
@@ -34,9 +35,16 @@
   top: 1.8rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .card.my-3 {
     border-radius: 2.1rem;
+  }
+  .point {
+    height: 3rem;
+    width: 3rem;
+  }
+  .number-span {
+    right: 2rem;
   }
 }
 

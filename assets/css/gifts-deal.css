@@ -1,0 +1,81 @@
+.form-control:focus {
+  color: #495057;
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+  color: #d2d2d2 !important;
+}
+
+:-ms-input-placeholder {
+  color: #d2d2d2 !important;
+}
+
+::-ms-input-placeholder {
+  color: #d2d2d2 !important;
+}
+
+::placeholder {
+  color: #d2d2d2 !important;
+}
+
+.search-container {
+  background-color: #fbfbfb;
+}
+
+.input-search {
+  background-color: transparent;
+}
+
+i {
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+button {
+  border: none !important;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.head-text {
+  color: #707070;
+  font-size: 1.4rem;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-right: -15px !important;
+}
+
+.card button {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.btnn {
+  padding: 0;
+}
+
+.body-card {
+  font-weight: bolder;
+}
+
+.body-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.body-card p {
+  font-size: 0.8rem !important;
+}
+/*# sourceMappingURL=gifts-deal.css.map */
