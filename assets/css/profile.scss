@@ -1,0 +1,214 @@
+.site-page {
+  margin-top: 3.5rem;
+}
+.profile-head {
+  background-color: #f5f5f5;
+  width: 100%;
+  border-radius: 10px;
+}
+.tags {
+  background-color: #fff;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e1e316;
+  text-align: right;
+  width: 100%;
+  margin-right: 60px;
+}
+.icon {
+  font-size: 24px;
+  color: #919191;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 120%;
+}
+.admin {
+  // font-size: 30px;
+  font-weight: bold;
+  color: #707070;
+}
+.followers {
+  font-weight: bold;
+  color: #707070;
+}
+.phone {
+  font-weight: bold;
+  color: #707070;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-and-flag .flag {
+  display: none;
+}
+.profile-title-with-image {
+  display: none;
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .button-groups .the-button {
+    color: #959595;
+    font-size: 10px;
+    background-color: #fff;
+  }
+  .profile-head .user-details .admin-and-flag .flag {
+    display: flex;
+  }
+  .profile-head .flag {
+    display: none;
+  }
+  .profile-title-with-image {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b8b8b8;
+    text-align: center;
+  }
+  .title {
+    display: none;
+  }
+  .the-button {
+    color: #959595;
+    font-size: 14px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 960px) {
+  .button-groups .the-button {
+    color: #959595;
+    font-size: 18px;
+    background-color: #fff;
+  }
+}
+.flag {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #919191;
+}
+.button-groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-end;
+}
+.button-groups .the-button {
+  color: #959595;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.button-groups button:hover {
+  background-color: #e2e417;
+  color: #fff;
+  z-index: 1;
+}
+.admin-and-flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+}
+.result {
+  font-weight: bold;
+  color: #7e7e7e;
+  text-align: center;
+  display: none;
+}
+.result-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.cards {
+  height: 100%;
+  width: 258px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.the-star {
+  color: #707070;
+}
+.image-card {
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-row {
+  display: flex;
+}
+.card-user-details {
+  display: flex;
+}
+.price {
+  font-weight: bold;
+  color: #707070;
+  text-align: right;
+}
+.starts {
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+.time i {
+  color: #b8b8b8;
+}
+.time p {
+  color: #b8b8b8;
+}
+.card-text {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ffffff;
+}
+.card-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 100%;
+  border-color: #b8b8b8;
+  border-radius: 20px;
+  border-width: 1px;
+}
+.bottom-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.second-section-card {
+  background-color: #efef;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  // width: 258;
+}

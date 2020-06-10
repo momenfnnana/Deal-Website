@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="338.409" height="98.915" viewBox="0 0 338.409 98.915">
+  <g id="مساحة_اعلانية-h" data-name="مساحة اعلانية-h" transform="translate(-110.598 -1828.629)">
+    <g id="Rectangle_1684" data-name="Rectangle 1684" transform="translate(110.598 1828.73)" fill="#fff" stroke="#efefef" stroke-width="1">
+      <rect width="338.409" height="98.814" rx="12" stroke="none"/>
+      <rect x="0.5" y="0.5" width="337.409" height="97.814" rx="11.5" fill="none"/>
+    </g>
+    <g id="مساحة_اعلانية" data-name="مساحة اعلانية" transform="translate(109.598 1828.629)">
+      <g id="Background" transform="translate(1 0)">
+        <g id="FramBottom" transform="translate(338.409 98) rotate(180)">
+          <path id="Intersection_2" data-name="Intersection 2" d="M0,12A12,12,0,0,1,12,0H56.21L0,50.568Z" fill="#e2e417"/>
+          <path id="Intersection_1" data-name="Intersection 1" d="M0,12A12,12,0,0,1,12,0H50.648L0,45.381Z" transform="translate(0 0)" fill="#707070"/>
+        </g>
+        <g id="FramTop">
+          <path id="Intersection_2-2" data-name="Intersection 2" d="M0,12A12,12,0,0,1,12,0H56.21L0,90.151Z" fill="#e2e417"/>
+          <path id="Intersection_1-2" data-name="Intersection 1" d="M0,12A12,12,0,0,1,12,0H50.648L0,84.965Z" transform="translate(0 0)" fill="#707070"/>
+        </g>
+      </g>
+      <g id="Group_53495" data-name="Group 53495" transform="translate(128.71 32.427)">
+        <text id="مساحة_اعلانية-2" data-name="مساحة اعلانية" transform="translate(42 17)" fill="#b8b8b8" font-size="13" font-family="Cairo-Bold, Cairo" font-weight="700"><tspan x="-41.561" y="0">مساحة اعلانية</tspan></text>
+        <text id="_99_375_" data-name="99 ×375 " transform="translate(39 36)" fill="#b8b8b8" font-size="10" font-family="Cairo-Regular, Cairo"><tspan x="-19" y="0">99 ×375 </tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

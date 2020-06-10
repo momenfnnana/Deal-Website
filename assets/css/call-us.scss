@@ -1,0 +1,102 @@
+.site-page {
+  margin-top: 3.5rem;
+}
+
+.call-us-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e1e316;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #707070;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-text {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.input {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.label {
+  width: 100%;
+}
+
+.text-area {
+  width: 100%;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.btn-warning {
+  color: #fff;
+  align-self: center;
+}
+
+.icon {
+  color: #707070 !important;
+  font-size: 1.5rem;
+}
+
+.whatsapp {
+  font-size: 1.7rem;
+}
+
+.submit-btn {
+  margin-right: 15px;
+}
+
+#sub-btn {
+  color: #fff;
+  background-color: #e2e417;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  background-color: #f7fa35 !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+label {
+  color: #707070;
+}
