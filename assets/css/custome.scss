@@ -191,6 +191,35 @@ button:focus {
   font-size: 1.4rem;
 }
 
+footer {
+  filter: grayscale(1);
+  background-color: #ebebeb24;
+}
+
+footer p {
+  margin: 0;
+}
+
+.intrest-link p {
+  color: #919191;
+  font-weight: bolder;
+}
+
+.intrest-link a {
+  color: #b8b8b8;
+  margin-top: 0.7rem;
+}
+
+.follow-us {
+  color: #919191;
+  font-weight: bolder;
+}
+
+.copy-rights {
+  color: #b8b8b8;
+  padding-bottom: 1rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 378px) {
   .navbar-expand-xl .navbar-collapse {
