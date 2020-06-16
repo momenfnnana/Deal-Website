@@ -1,0 +1,67 @@
+.full-page {
+  display: flex;
+  min-height: 100vh;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #efefef;
+}
+.back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  object-fit: contain;
+}
+.sign-up {
+  width: 100%;
+  height: auto;
+}
+h4 {
+  text-align: center;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+.input {
+  background-color: #efefef;
+  border-color: #b8b8b8;
+  border-radius: 10px;
+  padding-right: 20px;
+}
+.activation-button {
+  background-color: #7b7b7b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.data-input {
+  // flex: 1;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+}
+.title {
+  text-align: center;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+.did-you-forget-password{
+    font-weight: bold;
+    color: #111111;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+.full-page {
+  display: flex;
+  min-height: 100vh;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #efefef;
+}
+.back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  object-fit: contain;
+}
+.sign-up {
+  width: 100%;
+  height: auto;
+}
+.did-you-forget-password {
+  font-weight: bold;
+  color: #111111;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+.data-input {
+  // flex: 1;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+}
+.activation-button {
+  background-color: #7b7b7b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+h5 {
+  text-align: center;
+  color: #7e7e7e;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.input {
+  background-color: #ffffff76;
+  border-color: #ffffff76;
+  border-radius: 10px;
+  padding-right: 20px;
+}
+.radio-inputs {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 10px;
+}
+.radios {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.radio-inputs p {
+  font-weight: bold;
+  color: #2e2e2e;
+}
+label {
+  font-weight: bold;
+  color: #2e2e2e;
+}
