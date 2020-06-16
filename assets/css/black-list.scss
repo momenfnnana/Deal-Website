@@ -1,0 +1,47 @@
+.the-input {
+  border-width: 1px;
+  border-color: #fbfbfb;
+  background-color: #fbfbfb;
+}
+.search-btn {
+  display: flex;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+.input-group {
+  background-color: #fbfbfb;
+}
+h3 {
+  font-weight: bold;
+  color: #e1e316;
+}
+div {
+  text-align: start;
+}
+.search-container {
+  width: 75%;
+}
+.input-group > .form-control:not(:last-child) {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.input-group > .form-control:not(:last-child) {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.input {
+  text-align: start;
+  background-color: #fff;
+  border-color: #fff;
+}
+.search-btn {
+  background-color: #fff;
+  border-color: #fff;
+}
+.site-page{
+    margin-top: 3.5rem;
+}

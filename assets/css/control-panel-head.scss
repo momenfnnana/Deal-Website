@@ -1,0 +1,30 @@
+.site-page {
+  margin-top: 3.5rem;
+}
+.search-bar {
+  text-align: right;
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
+  border-radius: 50px;
+}
+.input-group-text {
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
+  border-radius: 50px;
+}
+.control-nav{
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+}
+.control-nav p{
+    margin-top: 15px;
+}
+.control-nav p :active {
+    background-color: yellow;z
+  }
+.btn-warning {
+    color: #FFFFFF;
+}

@@ -22,7 +22,7 @@
   align-self: flex-start;
 }
 .image-head {
-  width: 100%;
+  width: 75%;
 }
 .background {
   background-image: url("/assets/images/back_ground.svg");
@@ -45,11 +45,11 @@
   margin: 30px 2px 0 0;
 }
 .card:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   z-index: 1;
 }
 .card:hover .card-title {
-  font-size: 20px;
+  font-size: 15px;
 }
 .card:hover .description {
   display: block;
@@ -60,7 +60,7 @@
 //   }
 .card-title {
   display: flex;
-  font-size: 25px;
+  // font-size: 25px;
   color: #48475c;
   text-align: center;
   font-weight: 600;
@@ -70,7 +70,7 @@
 .description {
   display: none;
   color: #48475c;
-  font-size: 16px;
+  font-size: 12px;
 }
 .buttons {
   display: flex;

@@ -1,0 +1,69 @@
+.site-page {
+  margin-top: 3.5rem;
+}
+
+.search-bar {
+  text-align: right;
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
+  border-radius: 50px;
+}
+
+.input-group-text {
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
+  border-radius: 50px;
+}
+
+.control-nav {
+  background-color: #EBEBEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.control-nav p {
+  margin-top: 15px;
+}
+
+.control-nav p :active {
+  background-color: yellow;
+}
+
+.btn-warning {
+  color: #FFFFFF;
+}
+
+.button-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.button-groups .the-button {
+  color: #959595;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.button-groups button:hover {
+  background-color: #e2e417;
+  color: #fff;
+  z-index: 1;
+}
+/*# sourceMappingURL=control-panel-head.css.map */
