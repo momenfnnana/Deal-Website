@@ -89,8 +89,26 @@
             </div>
           </div>
           <!-- Search bar -->
+          <!-- user tab on mobile -->
+          <div id="accordion">
+            <div class="card user-tab">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- user tab on mobile -->
           <!-- right section for users -->
-          <div style="overflow-y: scroll;">
+          <div class="right-section">
             <div class="card">
               <img class="card-image" src="assets/images/profile-pic.png" />
               <div class="card-chat-details">
@@ -191,50 +209,91 @@
           <!-- right section for users -->
         </div>
         <!-- messeges && send input-->
-        <div class="my-5 col-lg-9" style="overflow-y: scroll;">
-          <div class="first-user col-lg-12">
-            <div class="messeges">
+        <div class="my-5 col-lg-9">
+          <div style="max-height: 70vh; overflow-y: auto;">
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                  <p class="messege-date px-2">12:30</p>
+                  <p class="messege-body px-3 py-2">
+                    :) مرحبا هل بامكاني سؤال عن المنتج
+                  </p>
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <img src="assets/images/you're_beautiful.png">
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
                 <p class="messege-date px-2">12:30</p>
                 <p class="messege-body px-3 py-2">
                   :) مرحبا هل بامكاني سؤال عن المنتج
                 </p>
-              <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
             </div>
-          </div>
-          <div class="second-user col-lg-12">
-            <div class="messeges">
-              <img class="user-image mx-3" src="assets/images/profile-pic.png" />
-              <img src="assets/images/you're_beautiful.png">
-              <p class="messege-date px-2">12:30</p>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
             </div>
-          </div>
-          <div class="first-user col-lg-12">
-            <div class="messeges">
-              <p class="messege-date px-2">12:30</p>
-              <p class="messege-body px-3 py-2">
-                :) مرحبا هل بامكاني سؤال عن المنتج
-              </p>
-              <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
             </div>
-          </div>
-          <div class="second-user col-lg-12">
-            <div class="messeges">
-              <img class="user-image mx-3" src="assets/images/profile-pic.png" />
-              <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
-              <p class="messege-date px-2">12:30</p>            </div>
-          </div>
-          <div class="first-user col-lg-12">
-            <div class="messeges">
-              <p class="messege-date px-2">12:30</p>
-              <img src="assets/images/hi_white.png">
-              <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
             </div>
-          </div>
-          <div class="second-user col-lg-12">
-            <div class="messeges">
-              <img class="user-image mx-3" src="assets/images/profile-pic.png" />
-              <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
-              <p class="messege-date px-2">12:30</p>            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
           </div>
           <!-- send input -->
           <div class="messeges-box">

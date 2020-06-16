@@ -94,10 +94,25 @@
     color: #b8b8b8;
     text-align: center;
   }
+  .site-page {
+    margin-top: 0rem;
+  }
   .the-button {
     color: #959595;
     font-size: 14px;
     background-color: #fff;
+  }
+  .first-user {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .right-section {
+    display: none;
+  }
+  .user-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -106,6 +121,14 @@
     color: #959595;
     font-size: 18px;
     background-color: #fff;
+  }
+  .right-section {
+    display: none;
+  }
+  .user-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -169,13 +192,13 @@
 
 .input {
   text-align: start;
-  background-color: #E9E9E9;
-  border-color: #E9E9E9;
+  background-color: #e9e9e9;
+  border-color: #e9e9e9;
 }
 
 .search-btn {
-  background-color: #E9E9E9;
-  border-color: #E9E9E9;
+  background-color: #e9e9e9;
+  border-color: #e9e9e9;
 }
 
 .input-group > .form-control:not(:last-child) {
@@ -239,7 +262,7 @@
 }
 
 .second-user .messeges .messege-body {
-  background-color: #B8B8B8;
+  background-color: #b8b8b8;
 }
 
 .card {
@@ -252,6 +275,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-radius: 0;
 }
 
 .card .card-image {
@@ -347,5 +371,15 @@
 
 .send-input {
   border-right-color: #fff;
+}
+
+.right-section {
+  max-height: 70vh;
+  overflow-y: auto;
+  border-left-color: #000;
+}
+
+.user-tab {
+  display: none;
 }
 /*# sourceMappingURL=profile-chat.css.map */

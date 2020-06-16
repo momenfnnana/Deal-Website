@@ -1,36 +1,42 @@
-.site-page{
-    margin-top: 3.5rem;
-    
+.site-page {
+  margin-top: 3.5rem;
 }
-.image{
-    width: 100%;
-    background-image: url("/assets/images/Logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+.image {
+  width: 100%;
 }
-.title{
- font-size: 30px;
- font-weight: bold;
- color: #E1E316;
- text-align: right;
- margin-right: 15px;
+.title {
+  font-weight: bold;
+  color: #e1e316;
+  text-align: right;
 }
-.paragraphs{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 557px;
-    margin-right: 15px;
+.second-title{
+  display: none;
+  font-weight: bold;
+  color: #e1e316;
+  text-align: right;
 }
-.paragraph{
-font-size: 18px;
-text-align: right;
-width: 100%;
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.paragraph {
+  font-size: 18px;
+  text-align: right;
+  width: 100%;
+  color: #707070;
 }
 @media (max-width: 768px) {
-  .paragraphs{
-    width: 338.06px;
+  .paragraphs {
+    width: 100%px;
     text-align: right;
     padding-left: 20px;
+  }
+  .title{
+    display: none;
+  }
+  .second-title{
+    display: flex;
   }
 }

@@ -19,6 +19,9 @@
 }
 
 .point{
+    display: flex;
+    justify-content:center;
+    align-items: center;
     height: 4rem;
     width: 4rem;
     background-color: #EFE817;
@@ -26,11 +29,8 @@
 }
 
 .number-span{
-    position: absolute;
     font-size: 2rem;
     color: #fff;
-    right: 2.5rem;
-    top: 1.8rem;
 }
 
 @media (max-width: 400px) {
@@ -39,12 +39,8 @@
     }
 
     .point{
-        height: 3rem;
+        height: 1.9rem;
         width: 3rem;
-    }
-    
-    .number-span{
-        right: 2rem;
     }
 }
 
@@ -81,3 +77,16 @@
 
 // @media (min-width: 1200px) {
 // }
+.text-center{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.getting-points-text{
+    color: #000;
+}
+.points{
+    color: #000;
+}
+.mr-3, .mx-3 {
+    margin-right: 2rem !important;
+}

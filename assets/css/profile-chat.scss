@@ -1,4 +1,4 @@
-.site-page{
+.site-page {
   margin-top: 3.5rem;
 }
 .profile-head {
@@ -69,18 +69,38 @@
     color: #b8b8b8;
     text-align: center;
   }
-
+  .site-page{
+    margin-top: 0rem;
+  }
   .the-button {
     color: #959595;
     font-size: 14px;
     background-color: #fff;
   }
+  .first-user{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .right-section{
+    display: none;
+  }
+  .user-tab{
+    display: flex;
+  }
 }
+
 @media screen and (max-width: 960px) {
   .button-groups .the-button {
     color: #959595;
     font-size: 18px;
     background-color: #fff;
+  }
+  .right-section{
+    display: none;
+  }
+  .user-tab{
+    display: flex;
+
   }
 }
 .flag {
@@ -122,13 +142,13 @@
 }
 .input {
   text-align: start;
-  background-color: #E9E9E9;
-  border-color: #E9E9E9;
+  background-color: #e9e9e9;
+  border-color: #e9e9e9;
 }
 
 .search-btn {
-  background-color: #E9E9E9;
-  border-color: #E9E9E9;
+  background-color: #e9e9e9;
+  border-color: #e9e9e9;
 }
 
 .input-group > .form-control:not(:last-child) {
@@ -159,7 +179,7 @@
   align-self: center;
   margin: 0;
 }
-.messege-date{
+.messege-date {
   font-size: 12px;
   align-self: flex-end;
 }
@@ -168,14 +188,15 @@
   display: flex;
   justify-content: flex-start;
 }
-.second-user .messeges .messege-body{
-  background-color: #B8B8B8;
+.second-user .messeges .messege-body {
+  background-color: #b8b8b8;
 }
 .card {
   border-color: #fff;
   border-bottom-color: #00000012;
   display: flex;
   flex-direction: row;
+  border-radius: 0;
 }
 .card .card-image {
   height: 55px;
@@ -235,6 +256,14 @@
   background-color: #fff;
   border-radius: 0;
 }
-.send-input{
+.send-input {
   border-right-color: #fff;
+}
+.right-section {
+  max-height: 70vh;
+  overflow-y: auto;
+  border-left-color:#000 ;
+}
+.user-tab{
+  display: none;
 }

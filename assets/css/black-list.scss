@@ -1,5 +1,4 @@
 .the-input {
-  border-width: 1px;
   border-color: #fbfbfb;
   background-color: #fbfbfb;
 }
@@ -10,6 +9,7 @@
 }
 .input-group {
   background-color: #fbfbfb;
+  width: 90%;
 }
 h3 {
   font-weight: bold;
@@ -42,6 +42,38 @@ div {
   background-color: #fff;
   border-color: #fff;
 }
-.site-page{
-    margin-top: 3.5rem;
+.site-page {
+  margin-top: 3.5rem;
+}
+.search-title {
+  color: #e1e316;
+}
+.result {
+  display: none;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 48%;
+  border-color: #fff;
+  border-radius: 10px;
+}
+img {
+  height: 62.45px;
+  width: 62.45px;
+}
+.name {
+  color: #48586780;
+}
+.email {
+  // color: #CCCCCC8C;
+  color: #7070708c;
+}
+.full-row{
+  justify-content: space-around;
+}
+.card-row{
+  display: flex;
+  justify-content: space-between;
 }
