@@ -1,1 +1,227 @@
-/* No CSS *//*# sourceMappingURL=create-ad.css.map */
+.contain-form {
+  background-color: #ebebeb;
+  margin-bottom: 8rem;
+  color: #707070;
+}
+
+.contain-form h3 {
+  font-weight: bold;
+}
+
+.contain-form .img-extention {
+  font-size: 0.7rem;
+  margin-top: -1rem;
+}
+
+.contain-form .img-extention p {
+  margin: 0;
+  font-weight: bolder;
+}
+
+.contain-form label {
+  font-weight: bolder;
+}
+
+.contain-form ::-webkit-input-placeholder {
+  color: #70707035 !important;
+  font-weight: bolder !important;
+}
+
+.contain-form :-ms-input-placeholder {
+  color: #70707035 !important;
+  font-weight: bolder !important;
+}
+
+.contain-form ::-ms-input-placeholder {
+  color: #70707035 !important;
+  font-weight: bolder !important;
+}
+
+.contain-form ::placeholder {
+  color: #70707035 !important;
+  font-weight: bolder !important;
+}
+
+.contain-form .form-check-label {
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+
+.contain-form .box {
+  background: #666666;
+  color: #ffffff;
+  width: 250px;
+  padding: 10px;
+  margin: 1em auto;
+}
+
+.contain-form p {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.contain-form input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.contain-form label {
+  cursor: pointer;
+}
+
+.contain-form input[type="checkbox"] + label:before {
+  border: none;
+  background-color: #919191;
+  border-radius: 0.2rem;
+  content: " ";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0;
+  margin-left: 0.6rem;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+
+.contain-form input[type="checkbox"] + .yallow-bg::before {
+  background-color: transparent !important;
+  border: 1.5px #919191 solid;
+}
+
+.contain-form input[type="checkbox"]:checked + label:before {
+  color: #333;
+  background-color: #e2e417 !important;
+  border: 1.5px #919191 solid;
+  content: " ";
+  text-align: center;
+}
+
+.contain-form input[type="checkbox"]:checked + .yallow-bg::before {
+  background-color: #e2e417 !important;
+  border: 1.5px #919191 solid;
+}
+
+.contain-form input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+.contain-form input[type="checkbox"]:focus + label::before {
+  outline: #3b99fc auto 5px;
+}
+
+.contain-form .btn-create-ad {
+  margin-bottom: 1.55rem;
+}
+
+.contain-form .sub-label {
+  font-size: 0.6rem;
+}
+
+.btn-success {
+  background-color: #CACF2B !important;
+  border: none;
+}
+
+.Neon {
+  font-size: 14px;
+  color: #494949;
+  position: relative;
+}
+
+.Neon * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Neon-input-dragDrop {
+  display: block;
+  width: 250px;
+  margin: 0 auto 25px auto;
+  padding: 25px;
+  color: #fff;
+  background: #7b7b7b;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
+  -webkit-transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  transition: box-shadow 0.3s, border-color 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.Neon-input-dragDrop i {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.Neon-input-dragDrop .Neon-input-icon {
+  font-size: 48px;
+  margin-top: -10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Neon-input-text h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.Neon-input-text span {
+  font-size: 12px;
+}
+
+.Neon-input-choose-btn.blue {
+  color: #008bff;
+  border: 1px solid #008bff;
+}
+
+.Neon-input-choose-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8d9496;
+  border-radius: 3px;
+  border: 1px solid #c6c6c6;
+  vertical-align: middle;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media (max-width: 600px) {
+  .contain-form {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .contain-form {
+    padding: 0 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain-form {
+    padding: 0 8rem;
+  }
+}
+
+.address-picker > div {
+  position: relative;
+}
+
+.address-picker > div .placePickerUIButton {
+  position: absolute;
+  top: 3px !important;
+  left: 3px !important;
+  z-index: 1000;
+  background: transparent;
+}
+/*# sourceMappingURL=create-ad.css.map */

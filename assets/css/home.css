@@ -14,6 +14,7 @@ h2 {
 .right-menu {
   background-color: #efefef;
   border-radius: 0.6rem !important;
+  font-size: 0.8rem;
 }
 
 .right-menu ul {
@@ -31,6 +32,14 @@ h2 {
 .right-menu ul li:hover {
   background-color: #b8b8b8;
   color: #fff;
+}
+
+.right-menu ul a::after {
+  content: "";
+  height: 2rem;
+  width: 1px;
+  background-color: #3E3E3E;
+  color: #3E3E3E;
 }
 
 a:hover {
@@ -85,16 +94,28 @@ a:hover {
   font-size: 75%;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  height: 25rem;
 }
 
 .head-card {
-  background-image: url("../images/index-img-card.svg");
-  background-size: cover;
   height: 11rem;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   position: relative;
+  background-size: cover;
+}
+
+.bg-card1 {
+  background-image: url("../images/index-img-card.svg");
+}
+
+.bg-card2 {
+  background-image: url("../images/bg-home-card.svg");
+}
+
+.bg-card3 {
+  background-image: url("../images/bg-card-home2.svg");
 }
 
 .fixed-label {
@@ -122,10 +143,23 @@ a:hover {
   border-radius: 50%;
   border: 1px #e2e2e2 solid;
   font-size: 0.8rem;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .love-icon-card i {
   color: #707070;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.love-icon-card.active {
+  background-color: #ec4b5a;
+  border: 1px #fff solid;
+}
+
+.love-icon-card.active i {
+  color: #fff;
 }
 
 .body-card-icon i {
@@ -195,6 +229,77 @@ a:hover {
   margin: 0;
   color: #979797;
   font-size: 80%;
+}
+
+.carousel-inner {
+  border-radius: 0.5rem !important;
+}
+
+.shared-wrapper {
+  position: fixed;
+  width: 400px;
+  height: 150px;
+  background: #ffffffe0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(89%);
+          transform: translateY(-50%) translateX(89%);
+  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 9994;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  border-top-left-radius: 1.1rem;
+  border-bottom-left-radius: 1.1rem;
+}
+
+.shared-wrapper.active {
+  -webkit-transform: translateY(-50%) translateX(0%);
+          transform: translateY(-50%) translateX(0%);
+}
+
+.shared-wrapper.active .shared-deal {
+  background-color: #b5bb14;
+}
+
+.shared-wrapper .btn {
+  border: 1px solid #ccc !important;
+}
+
+.shared-wrapper .shared-deal {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #CACF2B;
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  /* right: auto; */
+  left: 0;
+  width: 150px;
+  height: 50px;
+  -webkit-transform: translate(-50px, 50px) rotate(-90deg);
+          transform: translate(-50px, 50px) rotate(-90deg);
+  z-index: 9995;
+}
+
+.shared-deal, .shared-deal i {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.create-ad-card {
+  background-color: #EFEFEF;
+}
+
+.create-ad-card i {
+  font-size: 3rem;
+  color: #707070;
+}
+
+.fixed-ad {
+  color: #707070;
+  font-weight: bolder;
+  margin-top: 5rem;
 }
 
 @media (max-width: 600px) {

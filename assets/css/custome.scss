@@ -388,3 +388,20 @@ footer p {
     left: 2em !important;
   }
 }
+
+
+.input-group>.input-group-prepend:not(:first-child)>.btn{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+  border-radius: 0px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+.tooltip{
+  z-index: 9999;
+}
