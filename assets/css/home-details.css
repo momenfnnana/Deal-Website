@@ -68,26 +68,148 @@ h3 {
   width: 57px;
 }
 
+.card {
+  position: relative;
+  border-radius: 1rem;
+  font-size: 75%;
+}
+
 .card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.card-text {
-  text-align: right;
-}
-
-.card-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.head-card {
+  height: 11rem;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+  background-size: cover;
+}
+
+.bg-card1 {
+  background-image: url("../images/index-img-card.svg");
+}
+
+.bg-card2 {
+  background-image: url("../images/bg-home-card.svg");
+}
+
+.bg-card3 {
+  background-image: url("../images/bg-card-home2.svg");
+}
+
+.fixed-label {
+  height: 2rem;
+  width: 3rem;
+  color: #474747;
+  background-color: #cacf2b;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+  margin-bottom: -1rem;
+}
+
+.love-icon-card {
+  height: 2.25rem;
+  width: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px #e2e2e2 solid;
+  font-size: 0.8rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.love-icon-card i {
+  color: #707070;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.love-icon-card.active {
+  background-color: #ec4b5a;
+  border: 1px #fff solid;
+}
+
+.love-icon-card.active i {
+  color: #fff;
+}
+
+.body-card-icon i {
+  font-size: 1rem;
+  color: #b8b8b8;
+}
+
+.body-card-icon p {
+  margin: 0em;
+  color: #707070;
+  font-weight: bolder;
+}
+
+.body-card h6 {
+  color: #111111;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+.content-card-text {
+  color: #707070;
+  font-size: 0.7rem;
+}
+
+.body-card h5 {
+  color: #707070;
+  font-weight: bolder;
+}
+
+.full-star {
+  color: #f8da48 !important;
+}
+
+.empty-star {
+  color: #e2e2e2;
+}
+
+.star-icon {
+  -webkit-transform: rotate(107deg);
+          transform: rotate(107deg);
+  font-size: 0.85rem;
+}
+
+.time-publish i {
+  font-size: 0.8rem;
+  color: #b8b8b8;
+}
+
+.time-publish p {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 0.55rem;
 }
 
 .btn-warning {
@@ -112,20 +234,6 @@ h3 {
 .btn {
   border-radius: 15px;
   border-color: #b8b8b8 !important;
-}
-
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 35%;
-  border-radius: 10px;
-}
-
-.card-text {
-  color: #707070;
 }
 
 .slide-buttons {
@@ -336,5 +444,57 @@ h3 {
   .contact {
     display: none;
   }
+}
+
+.rating-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  position: absolute;
+  top: -30px;
+  right: 100px;
+  background-color: #fff;
+}
+
+.terms-for-sales {
+  display: none;
+}
+
+.rates {
+  display: none;
+}
+
+.image-container {
+  border: 1px #707070 solid;
+  height: 55px;
+  width: 55px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.name {
+  color: #303030;
+}
+
+.comments {
+  background-color: #F9F9F9;
+}
+
+.comments p {
+  text-align: center;
 }
 /*# sourceMappingURL=home-details.css.map */

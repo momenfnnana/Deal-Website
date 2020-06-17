@@ -1,6 +1,9 @@
 .site-page {
   margin-top: 3.5rem;
 }
+.site-page-card{
+  margin-top: 3.5rem;
+}
 .profile-head {
   background-color: #f5f5f5;
   width: 100%;
@@ -130,14 +133,13 @@
 .result {
   font-weight: bold;
   color: #7e7e7e;
-  text-align: center;
+  margin-top: 30px;
   display: none;
 }
 .result-profile {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
 }
 .cards {
   height: 100%;
@@ -214,4 +216,172 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   // width: 258;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+  font-size: 75%;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  height: 25rem;
+  margin-bottom: 20px;
+}
+
+.head-card {
+  height: 11rem;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+  background-size: cover;
+}
+
+.bg-card1 {
+  background-image: url("../images/index-img-card.svg");
+}
+
+.bg-card2 {
+  background-image: url("../images/bg-home-card.svg");
+}
+
+.bg-card3 {
+  background-image: url("../images/bg-card-home2.svg");
+}
+
+// .head-card img{
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   border-top-left-radius: 1rem;
+//   border-top-right-radius: 1rem;
+// }
+
+.fixed-label {
+  height: 2rem;
+  width: 3rem;
+  color: #474747;
+  background-color: #cacf2b;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+  margin-bottom: -1rem;
+}
+
+.love-icon-card {
+  height: 2.25rem;
+  width: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px #e2e2e2 solid;
+  font-size: 0.8rem;
+  transition: 0.4s;
+  i {
+    color: #707070;
+    transition: 0.4s;
+  }
+  &.active {
+    background-color: #ec4b5a;
+    border: 1px #fff solid;
+    i {
+      color: #fff;
+    }
+  }
+}
+.body-card{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+}
+.body-card-icon i {
+  font-size: 1rem;
+  color: #b8b8b8;
+}
+
+.body-card-icon p {
+  margin: 0em;
+  color: #707070;
+  font-weight: bolder;
+}
+
+.body-card h6 {
+  color: #111111;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+.content-card-text {
+  color: #707070;
+  font-size: 0.7rem;
+}
+
+.body-card h5 {
+  color: #707070;
+  font-weight: bolder;
+}
+
+.full-star {
+  color: #f8da48 !important;
+}
+
+.empty-star {
+  color: #e2e2e2;
+}
+
+.star-icon {
+  transform: rotate(107deg);
+  font-size: 0.85rem;
+}
+
+.time-publish i {
+  font-size: 0.8rem;
+  color: #b8b8b8;
+}
+
+.time-publish p {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 0.55rem;
+}
+.button-group{
+  display: flex;
+  justify-content: space-around;
+  background-color: #EFEFEF;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+.mb-2, .my-2 {
+  margin-bottom: 0 !important;
+}
+.inside-button{
+  display: flex;
+  align-items: center;
+}
+.one-follower{
+  height: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-self: flex-start;
+}
+.btn-warning {
+  color: #fff;
+  height: 50%;
+  border-radius: 50px;
+  // font-weight: bold;
+}
+.btn-warning:hover {
+  color: #fff;
+}
+.modal-input{
+  border-radius: 50px;
+}
+.modal-card-title{
+  text-align: right;
+  color: #707070;
+}
+.modal-card-description{
+  color: #707070;
+  text-align: right;
 }
