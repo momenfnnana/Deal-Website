@@ -1,0 +1,132 @@
+@extends('layouts.app')
+
+@section('css')
+    <style>
+        .field
+        {
+            margin-top: 1em;
+        }
+    </style>
+@endsection
+
+@section('content')
+    <div class="container bootstrap snippet">
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-7" style="background:white">
+
+                @include('flash::message')
+
+                <div class="tab-pane active" id="home">
+                    <hr>
+                    {{--<form class="form" action="##" method="post" id="registrationForm">--}}
+                    {!! Form::open(['method'=>'POST','url'=>url('dashboard/admin/post-profile'),'files'=>true,'id'=>'registrationForm']) !!}
+                    <div class="form-group">
+
+                        <div class="col-sm-2"></div>
+
+                        <div class="text-center col-md-8">
+                            <div class="imgUp">
+                                <img style="width: 50%" id="imageUrl" class="imagePreview img-circle"
+                                     @if(isset($user->photo))
+                                     src="{{url('uploads/images/users/'.auth()->user()->photo) }}"
+                                     @else
+                                     src="{{url('img/no-img-user.png')}}"
+                                     @endif
+                                >
+
+
+                                <div style="display: inline-block;margin-top: 0.5em">
+
+                                    <label class="btn profile-edit btn-default"><i class="fas fa-wrench"></i>تغيير الصورة
+                                        <input  name="image_url" type="file" id="imageUpload" class="uploadFile img" value="Upload Photo"  style="padding:0;width: 0px;height: 0px;overflow: hidden;">
+                                    </label>
+                                    <label id="imgUrlDel" class="btn profile-del btn-danger imgDel" >
+                                        <i class="fas fa-times"></i> حذف الصورة
+                                    </label>
+                                </div>
+                            </div><!-- col-2 -->
+                        </div>
+                        <input name="noneImage" type="hidden" id="noneImage" value="0">
+                        <hr><br>
+
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="col-md-12 field">
+                            <label for="first_name">الاسم</label>
+                            <input type="text" class="form-control" name="name" id="name" value="{{$user->name}}" placeholder="" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="col-md-12 field">
+                            <label for="last_name">البريد الاكتروني</label>
+                            <input type="email" class="form-control" name="email" id="email" value="{{$user->email}}" placeholder="" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="col-md-12 field">
+                            <label for="last_name">رقم الهاتف</label>
+                            <input type="text" class="form-control" name="phone" id="phone" value="{{$user->phone}}" placeholder="" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="col-md-12 field">
+                            <label for="password">كلمة المرور</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="تغيير كلمة المرور">
+                        </div>
+                    </div>
+                    <!-- Submit Field -->
+                    <div class="form-group col-sm-12 text-center"   style="display:inline-flex;margin-top: 1em">
+                        {!! Form::submit('حفظ', ['class' => 'btn btn-primary saveButton','files'=>true,]) !!}
+                    </div>
+                    {{--</form>--}}
+                    {!! Form::close() !!}
+                    <hr>
+
+                </div><!--/tab-pane-->
+
+
+            </div><!--/tab-pane-->
+        </div><!--/tab-content-->
+
+    </div><!--/col-9-->
+
+@endsection
+@section('scripts')
+    <script>
+
+    $(document).ready(function() {
+        var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imageUrl').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }}
+
+
+        $(".uploadFile").on('change', function(){
+            readURL(this);
+        });
+    })
+    $("#imgUrlDel").click(function(){
+        document.getElementById('imageUpload').value = '';
+        document.getElementById('noneImage').value = '1';
+        $('#imageUrl').attr("src", "{{url('img/no-img-user.png')}}");
+
+    });
+
+
+
+    </script>
+@endsection
