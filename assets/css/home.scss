@@ -178,59 +178,6 @@ a:hover {
   }
 }
 
-// select2
-// .select2{
-//   .select2-container--default .select2-selection--single{
-//     margin: auto;
-//     width: 100%;
-//   }
-// }
-.select2-container--default .select2-selection--single{
-  // height: 37px;
-  // width: 148px; 
-  min-width: 150px; 
-  padding: .5rem 1rem;
-  font-size: 1.2em;  
-  position: relative;
-  border: none !important;
-  border-radius: 0.4rem;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  width: 40px;
-  color: #fff;
-  font-size: 1.3em;
-  padding: 4px 12px;
-  height: 27px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 20px;
-}
-
-.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered{
-  padding: 0 !important;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-  color: #909090 !important;
-  font-size: 1rem !important;
-  line-height: inherit !important;
-}
-
-.select2-container .select2-selection--single{
-  height: 100% !important;
-  padding-right: 1rem;
-}
-
-.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
-  left: 1rem !important;
-}
-.shared-deal,.shared-deal  i{
-  color: #fff !important;
-  font-weight: bold;
-}
-
 .order-icon{
   background-color: #fff;
   padding: 0.65rem;
