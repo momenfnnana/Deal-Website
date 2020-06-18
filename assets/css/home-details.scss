@@ -52,11 +52,11 @@ h3 {
   font-size: 75%;
   // box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-.card-content{
+.card-content {
   display: flex;
   justify-content: space-around;
 }
-.card-text{
+.card-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -70,15 +70,15 @@ h3 {
   background-size: cover;
 }
 
-.bg-card1{
+.bg-card1 {
   background-image: url("../images/index-img-card.svg");
 }
 
-.bg-card2{
+.bg-card2 {
   background-image: url("../images/bg-home-card.svg");
 }
 
-.bg-card3{
+.bg-card3 {
   background-image: url("../images/bg-card-home2.svg");
 }
 
@@ -111,22 +111,26 @@ h3 {
   border-radius: 50%;
   border: 1px #e2e2e2 solid;
   font-size: 0.8rem;
-  transition: .4s;
+  transition: 0.4s;
   i {
     color: #707070;
-    transition: .4s;
+    transition: 0.4s;
   }
-  &.active{
+  &.active {
     background-color: #ec4b5a;
     border: 1px #fff solid;
-    i{
+    i {
       color: #fff;
     }
   }
-
 }
-
-
+.for-slider {
+  position: absolute;
+  left: 35px;
+  top: 20px;
+  background-color: #ffffff;
+  opacity: 0.75;
+}
 .body-card-icon i {
   font-size: 1rem;
   color: #b8b8b8;
@@ -214,10 +218,13 @@ h3 {
 .rate-buttons {
   display: flex;
 }
+
 .rate-button {
   color: #646464;
+  background-color: #fff;
   font-weight: bold;
 }
+
 .btn-outline-light:hover {
   color: #fff;
   background-color: #e2e417;
@@ -293,26 +300,25 @@ h3 {
   text-align: right;
 }
 .love-icon-card {
-    height: 2.25rem;
-    width: 2.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px #e2e2e2 solid;
-    font-size: 0.8rem;
-  }
-  
-  .love-icon-card i {
-    color: #707070;
-  }
-  .content-card-text {
-    color: #707070;
-    font-size: 0.7rem;
-    text-align: right;
-  }
-  .item > img {
-	width: 100%;
+  height: 2.25rem;
+  width: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px #e2e2e2 solid;
+  font-size: 0.8rem;
+}
+.love-icon-card i {
+  color: #707070;
+}
+.content-card-text {
+  color: #707070;
+  font-size: 0.7rem;
+  text-align: right;
+}
+.item > img {
+  width: 100%;
 }
 
 .carousel-indicators.recommended-list {
@@ -327,74 +333,84 @@ h3 {
 }
 .carousel-indicators.recommended-list li {
   display: block;
-	float: left;
+  float: left;
   width: 100%;
   height: auto;
   margin: 0;
   text-indent: 0;
   cursor: pointer;
   background-color: #e1e1e1;
-	color: #286090;
+  color: #286090;
   border: none;
   border-radius: 0;
-	text-align: center;
-	line-height: 50px;
-	transition: all .2s linear;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.2s linear;
 }
 .carousel-indicators.recommended-list .active {
   width: 33.33%;
   height: auto;
   margin: 0;
   background-color: #286090;
-	color: #fff;
+  color: #fff;
 }
 
 #carousel-example-generic {
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (max-width: 576px) { 
-  .contact{
+@media (max-width: 576px) {
+  .contact {
     display: none;
   }
- }
- .rating-box{
-   display: flex;
-   flex-direction:row ;
-   justify-content: center;
-   align-items: center;
-   width: 15%;
-   border-radius: 2rem;
-   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
-   position: absolute;
-   top: -30px;
-   right: 100px;
-   background-color: #fff;
- }
-//  .description-for-sale{
-//    display: none;
-//  }
-.terms-for-sales{
-  display: none;
 }
-.rates{
-  display: none;
+.rating-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  position: absolute;
+  top: -30px;
+  right: 100px;
+  background-color: #fff;
 }
-.image-container{
+.image-container {
   border: 1px #707070 solid;
   height: 55px;
   width: 55px;
   background-color: #fff;
   border-radius: 50px;
 }
-.name{
+.name {
   color: #303030;
 }
-.comments{
-  background-color: #F9F9F9;
+.comments {
+  background-color: #f9f9f9;
 }
-.comments p{
-  // width: 70%;
+.comments p {
+  color: #646262;
   text-align: center;
+}
+#map {
+  width: 100%;
+  height: 200px;
+}
+.active-btn{
+  color: #fff !important;
+  background-color: #e2e417 !important;
+  border-color: #d3d9df !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.terms-for-sales p{
+  color: #707070;
+}
+.the-button {
+  color: #959595;
+  font-size: 14px;
+  background-color: #fff;
 }

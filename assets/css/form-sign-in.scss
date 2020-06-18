@@ -41,10 +41,9 @@
   height: 300px;
 }
 .input {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  border-bottom-color: #8A8A8A50;
-  border-radius: 0px;
+  background-color: #FBFBFB;
+  border-color: #FBFBFB;
+  border-radius: 10px;
   padding-right: 20px;
 }
 .input{
@@ -53,7 +52,7 @@
   align-items: flex-start;
 }
 label{
-  color: #2E2E2E50;
+  color: #707070;
 }
 .remmember-pass-forget{
   display: flex;
@@ -66,10 +65,9 @@ label{
 }
 .forgit-pass{
   color: #7B7B7B;
-  font-weight: bold;
 }
 ::placeholder{
-  color: #000 !important;
+  color: #70707035 !important;
 }
 .remmember-me-text{
   color: #000;

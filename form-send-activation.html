@@ -24,51 +24,66 @@
   <body dir="rtl">
     <section class="container-fluid">
       <div class="row full-page">
-        <div class="col-12 col-md-6 order-2 order-md-1 right-section px-0">
-          <h2 class="title">عميلنا الغالي</h2>
+        <div class="col-12 col-sm-6 order-2 order-sm-1 right-section">
+          <h2 class="title my-5">عميلنا الغالي</h2>
           <div class="data-input">
-            <h5>
+            <h4 class="my-5">
               نأمل ادخالك المعرف الخاص بك المسجل لدينا لارسال رمز التفعيل<small
                 >(بريدك الالكتروني او الجوال او الواتساب)</small
               >
-            </h5>
+            </h4>
             <input
               type="text"
-              class="form-control input w-75 py-4 shadow"
+              class="form-control input w-50 py-4"
               id="activation-type"
               placeholder="ادخل بريد الإلكتروني او رقم جوال المسجل لدينا او واتساب"
             />
-            <div class="radio-inputs">
+            <div class="radio-inputs w-50 my-4">
               <p>التفعيل عن طريق</p>
               <div class="radios">
-                <div>
+                <!-- Default unchecked -->
+                <div class="custom-control custom-radio">
                   <input
                     type="radio"
+                    class="custom-control-input"
                     id="mobile"
-                    name="mobile"
-                    value="mobile"
+                    name="defaultExampleRadios"
                   />
-                  <label for="mobile"><small>الجوال</small></label>
+                  <label class="custom-control-label" for="mobile"
+                    >الجوال</label
+                  >
                 </div>
-                <div class=" mx-3">
-                  <input type="radio" id="email" name="email" value="email" />
-                  <label for="email"><small>البريد الالكتروني</small></label>
-                </div>
-                <div>
+                <!-- Default unchecked -->
+                <div class="custom-control custom-radio mx-3">
                   <input
                     type="radio"
-                    id="whats-app"
-                    name="whats-app"
-                    value="whats-app"
+                    class="custom-control-input"
+                    id="email"
+                    name="defaultExampleRadios"
                   />
-                  <label for="whats-app"><small>الواتساب</small></label>
+                  <label class="custom-control-label" for="email"
+                    >البريد الإلكتروني</label>
+                </div>
+                <!-- Default unchecked -->
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="WP"
+                    name="defaultExampleRadios"
+                  />
+                  <label class="custom-control-label" for="WP"
+                    >الواتساب</label
+                  >
                 </div>
               </div>
             </div>
-            <button class="activation-button px-3 py-2">طلب رمز تفعيل</button>
+            <button class="activation-button px-3 py-3">
+              طلب رمز تفعيل
+            </button>
           </div>
         </div>
-        <div class="col-12 col-md-6 order-1 order-md-2 left-section">
+        <div class="col-12 col-sm-6 order-1 order-sm-2 left-section">
           <img class="back" src="assets/images/back.png" />
           <img class="sign-up" src="assets/images/sign-up.png" />
           <h2 class="did-you-forget-password">هل نسيت كلمة المرور</h2>
