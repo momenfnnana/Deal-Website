@@ -1,0 +1,50 @@
+.site-page {
+    margin-top: 3.5rem;
+  }
+  .head{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  h3{
+      color: #707070;
+      font-weight: bolder;
+  }
+  .image{
+      object-fit: contain;
+  }
+  h4{
+      color: #48475C;
+      text-align: center;
+  }
+  h6{
+      color: #48475C;
+      text-align: center;
+      display: none;
+  }
+  .card{
+      border:none;
+      border-radius: 25px;
+      height: 15rem;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+  }
+
+  .card:hover {
+    transform: scale(1.3);
+    z-index: 1;
+  }
+  .card:hover h6 {
+    display: block;
+  }
+  .textarea{
+      border-color: #F9F9F9;
+      background-color: #F9F9F9;
+  }
+  .confirm{
+    font-weight: bold;
+    color: #fff;
+    background-color: #7B7B7B;
+  }

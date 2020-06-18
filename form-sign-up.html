@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{yourPage}</title>
+    <title>انشئ حساب</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -9,25 +9,24 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
       rel="stylesheet"
-      />
+    />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-    <link
+    <!-- <link
       href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css"
       rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
-    <script>
+    /> -->
+    <!-- <script>
       $(document).ready(function () {
         var allCountries = ["السعودية", "مصر", "الامارات", "دبي"];
         $("#countries").select({
           data: allCountries
         });
       });
-    </script>
+    </script> -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -43,9 +42,9 @@
   <body dir="rtl">
     <section class="container-fluid">
       <div class="row full-page">
-        <div class="col-lg-6 right-section px-0">
-          <div class="data-input my-0">
-            <div class="form-row w-100">
+        <div class="col-12 col-sm-6 order-2 order-sm-1 right-section">
+          <div class="data-input">
+            <div class="row w-100">
               <div class="form-group col-lg-6">
                 <label>اسم المستخدم</label>
                 <input
@@ -65,7 +64,7 @@
                 />
               </div>
             </div>
-            <div class="w-100">
+            <div class="email-input-container w-100">
               <label>البريد الإلكتروني</label>
               <input
                 type="text"
@@ -75,12 +74,37 @@
               />
             </div>
             <div class="form-row">
-              <div class="form-group"></div>
-              <!-- <select id="countries">
-                <option value="AL">اختر المدينة</option>
-              </select> -->
+              <!-- select 2js -->
+              <!-- <div class="form-group">
+                <div>
+                  <label>الجوال</label>
+                  <input
+                    type="text"
+                    class="form-control input w-50 py-4 px-0"
+                    id="user-name"
+                    placeholder="57756666"
+                  />
+                  <input
+                    type="text"
+                    class="form-control input w-25 py-4 px-0"
+                    id="user-name"
+                    placeholder="+996"
+                  />         
+                  <div>
+                  <label>المدينة</label>
+                  <select class="choose-country">
+                    <option>فلسطين</option>
+                    <option>الاردن</option>
+                    <option>السعودية</option>
+                    <option>مصر</option>
+                    <option>دبي</option>
+                    <option>الامارات</option>
+                  </select>
+                </div>
+              </div> -->
+                <!-- select 2js -->
             </div>
-            <div class="w-100">
+            <div class="how-did-know-us w-100">
               <label>كيف عرفت ديل</label>
               <!-- <input
                 type=""
@@ -101,7 +125,7 @@
                 <label>كلمة المرور</label>
                 <input
                   type="text"
-                  class="form-control input mx-2 py-4 px-0"
+                  class="form-control input py-4 px-0"
                   id="user-name"
                   placeholder="*****"
                 />
@@ -110,53 +134,88 @@
                 <label>تاكيد كلمة المرور</label>
                 <input
                   type="text"
-                  class="form-control input mx-2 py-4 px-0"
+                  class="form-control input py-4 px-0"
                   id="user-name"
                   placeholder="*****"
                 />
               </div>
-              <p>كلمه المرور يجب ان تحتوى على ارقام وحروف</p>
-            </div>
-            <div class="radios w-100">
-              <h6>التفعيل عن طريق</h6>
-              <div class="types">
-                <div class="one-type">
-                  <input
-                    type="radio"
-                    id="mobile"
-                    name="mobile"
-                    value="mobile"
-                  />
-                  <label for="mobile" class="type px-2">الجوال</label>
+              <p class="mx-3">كلمه المرور يجب ان تحتوى على ارقام وحروف</p>
+              <div class="radios mx-3 w-100">
+                <h6>التفعيل عن طريق</h6>
+                <div class="radios-buttons">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      id="mobile"
+                      name="defaultExampleRadios"
+                    />
+                    <label class="custom-control-label" for="mobile"
+                      >الجوال</label
+                    >
+                  </div>
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-radio mx-3">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      id="email"
+                      name="defaultExampleRadios"
+                    />
+                    <label class="custom-control-label" for="email"
+                      >البريد الإلكتروني</label>
+                  </div>
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      id="WP"
+                      name="defaultExampleRadios"
+                    />
+                    <label class="custom-control-label" for="WP"
+                      >الواتساب</label
+                    >
+                  </div>
                 </div>
-                <div class="one-type mx-3">
-                  <input type="radio" id="email" name="email" value="email" />
-                  <label for="email" class=" type px-2">البريد الالكتروني</label>
+                <div>
+                  <div class="row checkbox">
+                    <input
+                      class="mx-2"
+                      type="checkbox"
+                      id="agree"
+                      name="agreement-terms"
+                      value="terms"
+                    />
+                    <label class="checkbox-text" for="agree"
+                      >اوفق على
+                      <span class="terms-text mx-1"
+                        >الشروط والاحكام</span
+                      ></label
+                    ><br />
+                  </div>
+                  <div class="row checkbox">
+                    <input
+                      class="mx-2"
+                      type="checkbox"
+                      id="agree-messeges"
+                      name="messeges"
+                      value="msg"
+                    />
+                    <label class="checkbox-text2" for="agree-messeges"
+                      ><small>اوافق على ارسال الرسائل الترويجية</small></label
+                    ><br />
+                  </div>
                 </div>
-                <div class="one-type">
-                  <input
-                    type="radio"
-                    id="whats-app"
-                    name="whats-app"
-                    value="whats-app"
-                  />
-                  <label for="whats-app" class="type px-2">الواتساب</label>
-                </div>
-              </div>
-              <div>
-                <div class="row checkbox">
-                  <input class="mx-2" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                  <label class="checkbox-text" for="vehicle1">اوفق على <span class="terms-text mx-1">الشروط والاحكام</span></label><br>
-                </div>
-                <div class="row checkbox">
-                  <input class="mx-2" type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                  <label class="checkbox-text2" for="vehicle2"><small>اوافق على ارسال الرسائل الترويجية</small></label><br>
-                </div>
+                <button class="activation-button py-3 w-50 align-self-center">
+                  إنشاء
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 left-section">
+        <div class="col-12 col-sm-6 order-1 order-sm-2 left-section">
           <img class="back" src="assets/images/back.png" />
           <img class="sign-up" src="assets/images/sign-up.png" />
           <h2 class="did-you-forget-password">انشاء حساب جديد</h2>
@@ -164,9 +223,12 @@
       </div>
     </section>
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+      $(".choose-country").select2();
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>

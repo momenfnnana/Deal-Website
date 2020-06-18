@@ -1,7 +1,4 @@
 .full-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-height: 100vh;
 }
 
@@ -13,10 +10,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 15rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -62,7 +55,6 @@
 }
 
 .data-input {
-  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,14 +65,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300px;
 }
 
 .input {
-  background-color: #ffffff76;
-  border-color: #ffffff76;
-  border-bottom-color: #8a8a8a50;
-  border-radius: 0px;
+  background-color: #FBFBFB;
+  border-color: #FBFBFB;
+  border-radius: 10px;
   padding-right: 20px;
 }
 
@@ -88,23 +78,23 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #2e2e2e50;
+  color: #707070;
 }
 
 ::-webkit-input-placeholder {
-  color: #000 !important;
+  color: #70707035 !important;
 }
 
 :-ms-input-placeholder {
-  color: #000 !important;
+  color: #70707035 !important;
 }
 
 ::-ms-input-placeholder {
-  color: #000 !important;
+  color: #70707035 !important;
 }
 
 ::placeholder {
-  color: #000 !important;
+  color: #70707035 !important;
 }
 
 .username-realname {
@@ -128,8 +118,9 @@ label {
 }
 
 .know-us {
-  border-color: #fff;
-  border-bottom-color: #8a8a8a50;
+  border-color: #FBFBFB;
+  background-color: #FBFBFB;
+  color: #70707035;
 }
 
 p {
@@ -194,7 +185,7 @@ select {
 }
 
 .type {
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .checkbox {
@@ -207,7 +198,7 @@ select {
 }
 
 .checkbox-text {
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .checkbox-text2 {
@@ -215,6 +206,56 @@ select {
 }
 
 .terms-text {
-  color: #A9AE00;
+  color: #a9ae00;
+}
+
+.form-row > .col,
+.form-row > [class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.email-input-container {
+  padding-left: 7px;
+  padding-right: 15px;
+}
+
+.how-did-know-us {
+  padding-left: 7px;
+  padding-right: 15px;
+}
+
+.activation-button {
+  background-color: #7b7b7b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.radios-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-inputs p {
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.radios label {
+  color: #2e2e2e;
 }
 /*# sourceMappingURL=form-sign-up.css.map */

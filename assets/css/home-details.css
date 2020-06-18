@@ -141,14 +141,14 @@ h3 {
   border-radius: 50%;
   border: 1px #e2e2e2 solid;
   font-size: 0.8rem;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .love-icon-card i {
   color: #707070;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .love-icon-card.active {
@@ -158,6 +158,14 @@ h3 {
 
 .love-icon-card.active i {
   color: #fff;
+}
+
+.for-slider {
+  position: absolute;
+  left: 35px;
+  top: 20px;
+  background-color: #ffffff;
+  opacity: 0.75;
 }
 
 .body-card-icon i {
@@ -269,6 +277,7 @@ h3 {
 
 .rate-button {
   color: #646464;
+  background-color: #fff;
   font-weight: bold;
 }
 
@@ -422,8 +431,8 @@ h3 {
   border-radius: 0;
   text-align: center;
   line-height: 50px;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .carousel-indicators.recommended-list .active {
@@ -470,14 +479,6 @@ h3 {
   background-color: #fff;
 }
 
-.terms-for-sales {
-  display: none;
-}
-
-.rates {
-  display: none;
-}
-
 .image-container {
   border: 1px #707070 solid;
   height: 55px;
@@ -491,10 +492,34 @@ h3 {
 }
 
 .comments {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .comments p {
+  color: #646262;
   text-align: center;
+}
+
+#map {
+  width: 100%;
+  height: 200px;
+}
+
+.active-btn {
+  color: #fff !important;
+  background-color: #e2e417 !important;
+  border-color: #d3d9df !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.terms-for-sales p {
+  color: #707070;
+}
+
+.the-button {
+  color: #959595;
+  font-size: 14px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=home-details.css.map */

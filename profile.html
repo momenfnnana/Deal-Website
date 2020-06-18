@@ -20,13 +20,15 @@
 
     <link rel="stylesheet" href="./assets/css/profile.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   </head>
 
   <body dir="rtl">
-    <section class="container-fluid site-page">
+    <section class="container-fluid">
       <div class="row">
-        <p class="title">الملف الشخصي</p>
         <div class="profile-head">
+          <p class="title site-page px-5">الملف الشخصي</p>
           <i class="fas fa-flag flag"></i>
           <div style="display: flex; justify-content: center;">
             <div class="user-details">
@@ -116,7 +118,7 @@
                               <small>@moh20</small>
                             </p>
                           </div>
-                          <button type="button" class="btn btn-warning px-3">
+                          <button type="button" class="btn btn-primary rounded-pill h-50 align-self-center px-3">
                             متابع
                           </button>
                           <!-- <hr/> -->
@@ -135,7 +137,7 @@
                               <small>@moh20</small>
                             </p>
                           </div>
-                          <button type="button" class="btn btn-warning px-3">
+                          <button type="button" class="btn btn-primary rounded-pill h-50 align-self-center px-3">
                             متابع
                           </button>
                         </div>
@@ -153,7 +155,7 @@
                               <small>@moh20</small>
                             </p>
                           </div>
-                          <button type="button" class="btn btn-warning px-3">
+                          <button type="button" class="btn btn-primary rounded-pill h-50 align-self-center px-3">
                             متابع
                           </button>
                         </div>
@@ -167,13 +169,13 @@
           </div>
           <!-- Modal -->
           <div class="button-groups mx-auto w-75">
-            <button class="btn btn-light the-button w-100 py-3">
+            <button id="my-ad" class="btn btn-primary the-button w-100 py-3">
               إعلاناتي
             </button>
-            <button class="btn btn-light the-button w-100 py-3">
+            <button id="my-fav-ad" class="my-ad btn btn-primary the-button w-100 py-3">
               الإعلانات المفضلة
             </button>
-            <button class="btn btn-light the-button w-100 py-3">
+            <button id="chat" class="btn btn-primary the-button w-100 py-3">
               الرسائل الخاصة
             </button>
           </div>
@@ -181,8 +183,8 @@
       </div>
     </section>
     <section class="container">
-      <div class="row site-page-card justify-content-center">
-        <h3 class="result">
+      <div class="row justify-content-center">
+        <h3 class="result d-none py-5">
           لا يوجد اعلانات لك حتى الان .. ضف اول اعلان لك واحصل على 1000 نقطة من
           أمر ديل
         </h3>
@@ -218,7 +220,9 @@
               <div class="modal-body">
                 <section class="container-fluid">
                   <div class="row justify-content-around">
-                    <p class="modal-card-title my-1"><strong>اسم المحول</strong></p>
+                    <p class="modal-card-title my-1">
+                      <strong>اسم المحول</strong>
+                    </p>
                     <input
                       type="email"
                       class="form-control w-75 modal-input"
@@ -231,7 +235,10 @@
                     <p class="w-25 modal-card-title" style="text-align: right;">
                       <strong>الاسم</strong>
                     </p>
-                    <p class="w-50 modal-card-description" style="text-align: right;">
+                    <p
+                      class="w-50 modal-card-description"
+                      style="text-align: right;"
+                    >
                       admin
                     </p>
                   </div>
@@ -268,7 +275,9 @@
                     </p>
                   </div>
                   <div class="column mx-n2">
-                    <p class="modal-card-title my-1"><strong>المرفقات</strong></p>
+                    <p class="modal-card-title my-1">
+                      <strong>المرفقات</strong>
+                    </p>
                     <input class="w-100" type="file" />
                   </div>
                   <p class="modal-card-description">
@@ -284,7 +293,7 @@
                       justify-content: end;
                     "
                   >
-                    <button type="button" class="btn btn-warning px-4">
+                    <button type="button" class="btn btn-primary rounded-pill px-4">
                       إرسال
                     </button>
                   </div>
@@ -294,12 +303,8 @@
           </div>
         </div>
         <!-- Modal -->
-        <a
-          type="button"
-          data-toggle="modal"
-          data-target="#cardModal"
-          class="col-12 col-xl-3 col-lg-4 col-sm-6"
-        >
+        <div id="ad-cards" class="row site-page-card justify-content-center">
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
             <div class="card">
               <div
                 class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
@@ -344,12 +349,14 @@
               </div>
               <div class="mb-2 py-1 button-group">
                 <button type="button" class="btn btn-outline-info">
-                  <div class="row inside-button px-2">
-                    <i class="far fa-edit" style="font-size: 15px;"></i>
-                    <p class="my-0 mx-1" style="font-size: 15px;">
-                      تعديل
-                    </p>
-                  </div>
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
                 </button>
                 <button type="button" class="btn btn-outline-info">
                   <div class="row inside-button px-2">
@@ -359,9 +366,9 @@
                     </p>
                   </div>
                 </button>
-                <button type="button" class="btn btn-outline-info">
+                <button onclick="deleteAlert()" type="button" class="btn btn-outline-info">
                   <div class="row inside-button px-2">
-                    <i class="fas fa-trash" style="color: #EF5252;"></i>
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
                     <p class="my-0 mx-1" style="font-size: 15px;">
                       حذف
                     </p>
@@ -369,13 +376,8 @@
                 </button>
               </div>
             </div>
-        </a>
-        <a
-          type="button"
-          data-toggle="modal"
-          data-target="#cardModal"
-          class="col-12 col-xl-3 col-lg-4 col-sm-6"
-        >
+          </div>
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
             <div class="card">
               <div
                 class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
@@ -420,12 +422,14 @@
               </div>
               <div class="mb-2 py-1 button-group">
                 <button type="button" class="btn btn-outline-info">
-                  <div class="row inside-button px-2">
-                    <i class="far fa-edit" style="font-size: 15px;"></i>
-                    <p class="my-0 mx-1" style="font-size: 15px;">
-                      تعديل
-                    </p>
-                  </div>
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
                 </button>
                 <button type="button" class="btn btn-outline-info">
                   <div class="row inside-button px-2">
@@ -435,9 +439,9 @@
                     </p>
                   </div>
                 </button>
-                <button type="button" class="btn btn-outline-info">
+                <button onclick="deleteAlert()" type="button" class="btn btn-outline-info">
                   <div class="row inside-button px-2">
-                    <i class="fas fa-trash" style="color: #EF5252;"></i>
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
                     <p class="my-0 mx-1" style="font-size: 15px;">
                       حذف
                     </p>
@@ -445,212 +449,399 @@
                 </button>
               </div>
             </div>
-        </a>
-        <a
-          type="button"
-          data-toggle="modal"
-          data-target="#cardModal"
-          class="col-12 col-xl-3 col-lg-4 col-sm-6"
-        >
-          <div class="card">
-            <div
-              class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
-            ></div>
-            <div class="body-card px-3">
-              <div class="d-flex justify-content-between mt-3">
-                <h6>ملابس تركية أطفال لطلبات</h6>
-                <div class="love-icon-card mt-2">
-                  <button>
-                    <i class="far fa-heart mt-1"></i>
-                  </button>
+          </div>
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <div
+                class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
+              ></div>
+              <div class="body-card px-3">
+                <div class="d-flex justify-content-between mt-3">
+                  <h6>ملابس تركية أطفال لطلبات</h6>
+                  <div class="love-icon-card mt-2">
+                    <button>
+                      <i class="far fa-heart mt-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex body-card-icon">
+                  <div class="d-flex ml-4 align-items-center">
+                    <i class="far fa-user ml-2"></i>
+                    <p>محمد أحمد</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt ml-2"></i>
+                    <p>الرياض</p>
+                  </div>
+                </div>
+                <p class="mt-3 content-card-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                  شكلي لملئ الفراغات غير مقروء بالضرورة
+                </p>
+                <h5>$50.00</h5>
+                <div class="footer-card d-flex justify-content-between my-3">
+                  <div class="d-flex">
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star empty-star star-icon"></i>
+                  </div>
+                  <div class="d-flex time-publish align-items-center">
+                    <i class="far fa-clock"></i>
+                    <p class="mr-1">منذ اسبوع</p>
+                  </div>
                 </div>
               </div>
-              <div class="d-flex body-card-icon">
-                <div class="d-flex ml-4 align-items-center">
-                  <i class="far fa-user ml-2"></i>
-                  <p>محمد أحمد</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-map-marker-alt ml-2"></i>
-                  <p>الرياض</p>
-                </div>
-              </div>
-              <p class="mt-3 content-card-text">
-                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
-                شكلي لملئ الفراغات غير مقروء بالضرورة
-              </p>
-              <h5>$50.00</h5>
-              <div class="footer-card d-flex justify-content-between my-3">
-                <div class="d-flex">
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star empty-star star-icon"></i>
-                </div>
-                <div class="d-flex time-publish align-items-center">
-                  <i class="far fa-clock"></i>
-                  <p class="mr-1">منذ اسبوع</p>
-                </div>
+              <div class="mb-2 py-1 button-group">
+                <button type="button" class="btn btn-outline-info">
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      دفع العمولة
+                    </p>
+                  </div>
+                </button>
+                <button onclick="deleteAlert()" type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      حذف
+                    </p>
+                  </div>
+                </button>
               </div>
             </div>
-            <div class="mb-2 py-1 button-group">
-              <button type="button" class="btn btn-outline-info">
-                <div class="row inside-button px-2">
-                  <i class="far fa-edit" style="font-size: 15px;"></i>
-                  <p class="my-0 mx-1" style="font-size: 15px;">
-                    تعديل
-                  </p>
+          </div>    
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <div
+                class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
+              ></div>
+              <div class="body-card px-3">
+                <div class="d-flex justify-content-between mt-3">
+                  <h6>ملابس تركية أطفال لطلبات</h6>
+                  <div class="love-icon-card mt-2">
+                    <button>
+                      <i class="far fa-heart mt-1"></i>
+                    </button>
+                  </div>
                 </div>
-              </button>
-              <button type="button" class="btn btn-outline-info">
-                <div class="row inside-button px-2">
-                  <i class="fas fa-dollar-sign"></i>
-                  <p class="my-0 mx-1" style="font-size: 15px;">
-                    دفع العمولة
-                  </p>
+                <div class="d-flex body-card-icon">
+                  <div class="d-flex ml-4 align-items-center">
+                    <i class="far fa-user ml-2"></i>
+                    <p>محمد أحمد</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt ml-2"></i>
+                    <p>الرياض</p>
+                  </div>
                 </div>
-              </button>
-              <button type="button" class="btn btn-outline-info">
-                <div class="row inside-button px-2">
-                  <i class="fas fa-trash" style="color: #EF5252;"></i>
-                  <p class="my-0 mx-1" style="font-size: 15px;">
-                    حذف
-                  </p>
+                <p class="mt-3 content-card-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                  شكلي لملئ الفراغات غير مقروء بالضرورة
+                </p>
+                <h5>$50.00</h5>
+                <div class="footer-card d-flex justify-content-between my-3">
+                  <div class="d-flex">
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star empty-star star-icon"></i>
+                  </div>
+                  <div class="d-flex time-publish align-items-center">
+                    <i class="far fa-clock"></i>
+                    <p class="mr-1">منذ اسبوع</p>
+                  </div>
                 </div>
-              </button>
+              </div>
+              <div class="mb-2 py-1 button-group">
+                <button type="button" class="btn btn-outline-info">
+                  <a
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#cardModal"
+                  >
+                  <div class="row inside-button px-2">
+                    <i class="far fa-edit" style="font-size: 15px;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      تعديل
+                    </p>
+                  </div>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      دفع العمولة
+                    </p>
+                  </div>
+                </button>
+                <button onclick="deleteAlert()" type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      حذف
+                    </p>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
-        </a>
-        <a
-          type="button"
-          data-toggle="modal"
-          data-target="#cardModal"
-          class="col-12 col-xl-3 col-lg-4 col-sm-6"
-        >
-          <div class="card">
-            <div
-              class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
-            ></div>
-            <div class="body-card px-3">
-              <div class="d-flex justify-content-between mt-3">
-                <h6>ملابس تركية أطفال لطلبات</h6>
-                <div class="love-icon-card mt-2">
-                  <button>
-                    <i class="far fa-heart mt-1"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="d-flex body-card-icon">
-                <div class="d-flex ml-4 align-items-center">
-                  <i class="far fa-user ml-2"></i>
-                  <p>محمد أحمد</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-map-marker-alt ml-2"></i>
-                  <p>الرياض</p>
-                </div>
-              </div>
-              <p class="mt-3 content-card-text">
-                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
-                شكلي لملئ الفراغات غير مقروء بالضرورة
-              </p>
-              <h5>$50.00</h5>
-              <div class="footer-card d-flex justify-content-between my-3">
-                <div class="d-flex">
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star ml-2 full-star star-icon"></i>
-                  <i class="fas fa-star empty-star star-icon"></i>
-                </div>
-                <div class="d-flex time-publish align-items-center">
-                  <i class="far fa-clock"></i>
-                  <p class="mr-1">منذ اسبوع</p>
-                </div>
-              </div>
-            </div>
-            <div class="mb-2 py-1 button-group">
-              <button type="button" class="btn btn-outline-info">
-                <div class="row inside-button px-2">
-                  <i class="far fa-edit" style="font-size: 15px;"></i>
-                  <p class="my-0 mx-1" style="font-size: 15px;">
-                    تعديل
-                  </p>
-                </div>
-              </button>
-              <button type="button" class="btn btn-outline-info">
-                <div class="row inside-button px-2">
-                  <i class="fas fa-dollar-sign"></i>
-                  <p class="my-0 mx-1" style="font-size: 15px;">
-                    دفع العمولة
-                  </p>
-                </div>
-              </button>
-              <button type="button" class="btn btn-outline-info">
-                <div class="row inside-button px-2">
-                  <i class="fas fa-trash" style="color: #EF5252;"></i>
-                  <p class="my-0 mx-1" style="font-size: 15px;">
-                    حذف
-                  </p>
-                </div>
-              </button>
-            </div>
-          </div>
+        </div>
         </a>
       </div>
     </section>
-    <!-- modal -->
-    <!-- <section class="container-fluid">
-  <div class="followers">
-    <div class="one-follower">
-      <img style="height: 55px;width: 55px;" src="assets/images/profile-pic.png">
-      <div class="w-100 mx-2">
-        <p style="text-align: right;">محمداحمد</p>
-        <p style="text-align: right;"><small>@moh20</small></p> -->
-    <!-- <hr/> -->
-    <!-- </div>
-      <hr />
-    </div>
-    <div class="one-follower">
-      <img style="height: 55px;width: 55px;" src="assets/images/profile-pic.png">
-      <div class="w-100 mx-2">
-        <p style="text-align: right;">محمداحمد</p>
-        <p style="text-align: right;"><small>@moh20</small></p> -->
-    <!-- <hr/> -->
-    <!-- </div>
-      <hr />
-    </div>
-    <div class="one-follower">
-      <img style="height: 55px;width: 55px;" src="assets/images/profile-pic.png">
-      <div class="w-100 mx-2">
-        <p style="text-align: right;">محمداحمد</p>
-        <p style="text-align: right;"><small>@moh20</small></p> -->
-    <!-- <hr/> -->
-    <!-- </div>
-      <hr />
-    </div>
-    <div class="one-follower">
-      <img style="height: 55px;width: 55px;" src="assets/images/profile-pic.png">
-      <div class="w-100 mx-2">
-        <p style="text-align: right;">محمداحمد</p>
-        <p style="text-align: right;"><small>@moh20</small></p> -->
-    <!-- <hr/> -->
-    <!-- </div>
-      <hr />
-    </div>
-    <div class="one-follower">
-      <img style="height: 55px;width: 55px;" src="assets/images/profile-pic.png">
-      <div class="w-100 mx-2">
-        <p style="text-align: right;">محمداحمد</p>
-        <p style="text-align: right;"><small>@moh20</small></p> -->
-    <!-- <hr/> -->
-    <!-- </div>
-      <hr />
-    </div>
-  </div>
-</section> -->
-    <!-- modal -->
+    <section class="container-fluid chat-for-admin d-none">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- Search bar -->
+          <div class="input-group my-4 w-100 mb-3">
+            <input class="form-control input" placeholder="ابحث..." />
+            <div class="input-group-prepend">
+              <span class="input-group-text search-btn" id="basic-addon1">
+                <i class="fas fa-search" style="color: #707070;"></i>
+              </span>
+            </div>
+          </div>
+          <!-- Search bar -->
+          <!-- right section for users -->
+          <div class="right-section">
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">محمد احمد</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">صهيب انس</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">انس صهيب</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">كمال محمود</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">انس صهيب</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">عبير انس</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr/>
+          </div>
+          <!-- right section for users -->
+        </div>
+        <!-- left section for messeges-->
+        <div class="my-5 col-lg-9">
+          <div style="max-height: 70vh; overflow-y: auto;">
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                  <p class="messege-date px-2">12:30</p>
+                  <p class="messege-body px-3 py-2">
+                    :) مرحبا هل بامكاني سؤال عن المنتج
+                  </p>
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <img src="assets/images/you're_beautiful.png">
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img class="user-image mx-3" src="assets/images/profile-pic.png" />
+                <p class="messege-body px-3 py-2">:) مرحبا هل بامكاني سؤال عن المنتج</p>
+                <p class="messege-date px-2">12:30</p>            </div>
+            </div>
+          </div>
+          <!-- send input -->
+          <div class="messeges-box">
+            <div class="input-group my-4 w-100 mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text rounded-0 plus" id="basic-addon1" style="background-color: #fff;border-left-color: #fff;">
+                  <i class="fas fa-plus-circle" style="font-size: 24px;"></i>
+                </span>
+              </div>
+              <input
+                class="form-control rounded-0 send-input py-4"
+                placeholder="اكتب شيئا..."
+                style="border-left-color: #fff;border-right-color: #fff;"
+              />
+              <div class="input-group-prepend">
+                <span class="input-group-text send" id="basic-addon1" style="background-color: #fff;">
+                  <i class="fas fa-paper-plane" style="color: #707070;"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- send input -->
+        </div>
+        <!-- left section for messeges -->
+      </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -668,7 +859,44 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function(){
+        $('#my-ad').click(function(){
+          $('#ad-cards').removeClass('d-none')
+          $('.result').addClass('d-none')
+          $('.chat-for-admin').addClass('d-none')
+          $(this).removeClass('the-button').addClass('active-btn').siblings().addClass('the-button')
+        })
+        $('#my-fav-ad').click(function(){
+         $('#ad-cards').addClass('d-none')
+         $('.chat-for-admin').addClass('d-none')
+         $('.result').removeClass('d-none')
+         $(this).removeClass('the-button').addClass('active-btn').siblings().addClass('the-button')
+        })
+        $('#chat').click(function(){
+          $('.chat-for-admin').removeClass('d-none')
+          $('.result').addClass('d-none')
+          $('#ad-cards').addClass('d-none')
+          $(this).removeClass('the-button').addClass('active-btn').siblings().addClass('the-button')
+        })
+      })
+    </script>
     <script src="./assets/js/nav-footer.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      function deleteAlert(){
+        swal({
+          title: "هل انت متأكد تريد الحذف؟ ☹",
+          text: "سيتم حذف المنتج",
+          icon: "warning",
+          dangerMode: true,
+        })
+        .then(willDelete => {
+          if (willDelete) {
+            swal("تم الحذف", "تم حذف المنتج", "success");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
