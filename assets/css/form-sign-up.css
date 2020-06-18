@@ -1,0 +1,220 @@
+.full-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 15rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efefef;
+}
+
+.back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.sign-up {
+  width: 100%;
+  height: auto;
+}
+
+.did-you-forget-password {
+  font-weight: bold;
+  color: #111111;
+}
+
+.data-input {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+}
+
+.input {
+  background-color: #ffffff76;
+  border-color: #ffffff76;
+  border-bottom-color: #8a8a8a50;
+  border-radius: 0px;
+  padding-right: 20px;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2e2e2e50;
+}
+
+::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+:-ms-input-placeholder {
+  color: #000 !important;
+}
+
+::-ms-input-placeholder {
+  color: #000 !important;
+}
+
+::placeholder {
+  color: #000 !important;
+}
+
+.username-realname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mobile-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.know-us {
+  border-color: #fff;
+  border-bottom-color: #8a8a8a50;
+}
+
+p {
+  font-size: 9px;
+  color: #919191;
+}
+
+.radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.radio-inputs p {
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+.types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.one-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+select {
+  border-color: #fff;
+  border-bottom-color: #8a8a8a50;
+}
+
+.type {
+  color: #2E2E2E;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-text {
+  color: #2E2E2E;
+}
+
+.checkbox-text2 {
+  color: #919191;
+}
+
+.terms-text {
+  color: #A9AE00;
+}
+/*# sourceMappingURL=form-sign-up.css.map */

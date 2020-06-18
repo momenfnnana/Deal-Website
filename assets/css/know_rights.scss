@@ -15,22 +15,12 @@
   align-items: center;
 }
 .right-title {
-  font-size: 30px;
-  font-family: Cairo;
-  font-weight: 625;
+  font-weight: bolder;
   color: #e1e316;
   align-self: flex-start;
 }
-.image-head {
-  width: 75%;
-}
 .background {
   background-image: url("/assets/images/back_ground.svg");
-}
-.second-section {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
 .card {
   display: flex;
@@ -63,8 +53,7 @@
   // font-size: 25px;
   color: #48475c;
   text-align: center;
-  font-weight: 600;
-  width: 150px;
+  font-weight: bolder;
   border-bottom-color: red;
 }
 .description {
@@ -81,22 +70,53 @@
 .legal {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-around;
 }
 .buttn {
-  height: 57px;
   margin-top: 110px;
-  margin-left: 20px;
   margin-bottom: 30px;
   font-weight: bold;
   color: #f6f6f6;
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .request {
-  width: 471.17px;
-  height: 57px;
   font-weight: bold;
   color: #f6f6f6;
   margin-bottom: 20px;
+  width: 50% !important;
+}
+.w-50 {
+  width: 30% !important;
+}
+@media (max-width: 576px) {  
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.card:hover .card-title {
+  font-size: 15px;
+}
+.card:hover .description {
+  display: block;
+  text-align: right;
+}
+}
+h3{
+  color: #48475C;
+}
+h6{
+  color: #48475C;
+  // display: none;
+}
+.know-right-card{
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.image{
+  object-fit: contain;
 }

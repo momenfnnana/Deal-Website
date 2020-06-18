@@ -2,6 +2,10 @@
   margin-top: 3.5rem;
 }
 
+.site-page-card {
+  margin-top: 3.5rem;
+}
+
 .profile-head {
   background-color: #f5f5f5;
   width: 100%;
@@ -116,6 +120,9 @@
     font-size: 14px;
     background-color: #fff;
   }
+  .site-page {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -177,7 +184,7 @@
 .result {
   font-weight: bold;
   color: #7e7e7e;
-  text-align: center;
+  margin-top: 30px;
   display: none;
 }
 
@@ -191,7 +198,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 200px;
 }
 
 .cards {
@@ -310,5 +316,196 @@
   background-color: #efef;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+  font-size: 75%;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  height: 25rem;
+  margin-bottom: 20px;
+}
+
+.head-card {
+  height: 11rem;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+  background-size: cover;
+}
+
+.bg-card1 {
+  background-image: url("../images/index-img-card.svg");
+}
+
+.bg-card2 {
+  background-image: url("../images/bg-home-card.svg");
+}
+
+.bg-card3 {
+  background-image: url("../images/bg-card-home2.svg");
+}
+
+.fixed-label {
+  height: 2rem;
+  width: 3rem;
+  color: #474747;
+  background-color: #cacf2b;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+  margin-bottom: -1rem;
+}
+
+.love-icon-card {
+  height: 2.25rem;
+  width: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px #e2e2e2 solid;
+  font-size: 0.8rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.love-icon-card i {
+  color: #707070;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.love-icon-card.active {
+  background-color: #ec4b5a;
+  border: 1px #fff solid;
+}
+
+.love-icon-card.active i {
+  color: #fff;
+}
+
+.body-card {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.body-card-icon i {
+  font-size: 1rem;
+  color: #b8b8b8;
+}
+
+.body-card-icon p {
+  margin: 0em;
+  color: #707070;
+  font-weight: bolder;
+}
+
+.body-card h6 {
+  color: #111111;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+.content-card-text {
+  color: #707070;
+  font-size: 0.7rem;
+}
+
+.body-card h5 {
+  color: #707070;
+  font-weight: bolder;
+}
+
+.full-star {
+  color: #f8da48 !important;
+}
+
+.empty-star {
+  color: #e2e2e2;
+}
+
+.star-icon {
+  -webkit-transform: rotate(107deg);
+          transform: rotate(107deg);
+  font-size: 0.85rem;
+}
+
+.time-publish i {
+  font-size: 0.8rem;
+  color: #b8b8b8;
+}
+
+.time-publish p {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 0.55rem;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #EFEFEF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mb-2, .my-2 {
+  margin-bottom: 0 !important;
+}
+
+.inside-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.one-follower {
+  height: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.btn-warning {
+  color: #fff;
+  height: 50%;
+  border-radius: 50px;
+}
+
+.btn-warning:hover {
+  color: #fff;
+}
+
+.modal-input {
+  border-radius: 50px;
+}
+
+.modal-card-title {
+  text-align: right;
+  color: #707070;
+}
+
+.modal-card-description {
+  color: #707070;
+  text-align: right;
 }
 /*# sourceMappingURL=profile.css.map */

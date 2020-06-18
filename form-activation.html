@@ -18,40 +18,25 @@
     />
     <link rel="stylesheet" href="./assets/css/custome.css" />
 
-    <link rel="stylesheet" href="./assets/css/{yourPage}.css" />
+    <link rel="stylesheet" href="./assets/css/form-activation.css" />
   </head>
 
-  <body>
+  <body dir="rtl">
     <section class="container-fluid">
-      <div class="row">
-        <div class="form-side" col-xl-6>
-          <div class="txt-section">
-            <p class="title">عميلنا الغالي</p>
-          </div>
-          <div class="button-group">
-            <p>رجاء إدخال رمز التفعيل المرسل إليكم</p>
-            <input
-              disabled
-              type="text"
-              class="btn btn-outline-secondary button"
-              value="10:00"
-            />
-            <input
-              type="text"
-              class="form-control input"
-              placeholder="قم بإدخال رمز التفعيل"
-            />
-            <button type="button" class="btn btn-secondary submit-button">
-              تفعيل
-            </button>
+      <div class="row full-page">
+        <div class="col-12 col-lg-6 order-2 order-md-1 right-section px-0">
+          <h2 class="title">عميلنا الغالي</h2>
+          <div class="data-input">
+            <h4>رجاء إدخال رمز التفعيل المرسل إليكم</h4>
+              <button type="button">10</button>
+              <input type="text" class="form-control input w-100" id="activation number" aria-describedby="emailHelp" placeholder="قم بإدخال رقم التفعيل">
+              <button class="activation-button w-50 py-2">تفعيل</button>
           </div>
         </div>
-        <div class="image-side" col-xl-6>
-          <a class="back" href="#">
-            <img src="/assets/images/back.png" /><br />
-          </a>
-          <img class="image" src="/assets/images/sign-up.png" />
-          <p class="did-forget-pass">هل نسيت كلمة المرور</p>
+        <div class="col-12 col-lg-6 order-1 order-md-2 left-section">
+          <img class="back" src="assets/images/back.png">
+          <img class="img-fluid" src="assets/images/sign-up.png">
+          <h2 class="did-you-forget-password">هل نسيت كلمة المرور</h2>
         </div>
       </div>
     </section>

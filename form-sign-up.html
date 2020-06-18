@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{yourPage}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+      />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var allCountries = ["السعودية", "مصر", "الامارات", "دبي"];
+        $("#countries").select({
+          data: allCountries
+        });
+      });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+
+    <link rel="stylesheet" href="./assets/css/form-sign-up.css" />
+  </head>
+
+  <body dir="rtl">
+    <section class="container-fluid">
+      <div class="row full-page">
+        <div class="col-lg-6 right-section px-0">
+          <div class="data-input my-0">
+            <div class="form-row w-100">
+              <div class="form-group col-lg-6">
+                <label>اسم المستخدم</label>
+                <input
+                  type="text"
+                  class="form-control input mx-2 py-4 px-0"
+                  id="user-name"
+                  placeholder="محمد أحمد"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <label>الاسم</label>
+                <input
+                  type="text"
+                  class="form-control input mx-2 py-4 px-0"
+                  id="user-name"
+                  placeholder="محمد أحمد"
+                />
+              </div>
+            </div>
+            <div class="w-100">
+              <label>البريد الإلكتروني</label>
+              <input
+                type="text"
+                class="form-control input w-100 py-4 px-0"
+                id="user-name"
+                placeholder="moh.ah@gmail.com"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group"></div>
+              <!-- <select id="countries">
+                <option value="AL">اختر المدينة</option>
+              </select> -->
+            </div>
+            <div class="w-100">
+              <label>كيف عرفت ديل</label>
+              <!-- <input
+                type=""
+                class="form-control input w-100 py-4 px-0"
+                id="user-name"
+                placeholder="اختر مدينة"
+              /> -->
+              <select name="know-us" id="social" class="know-us w-100">
+                <option value="facebook">فيسبوك</option>
+                <option value="instagram">انستا</option>
+                <option value="whatsapp">واتساب</option>
+                <option value="twitter">تويتر</option>
+                <option value="telegram">تلغرام</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>كلمة المرور</label>
+                <input
+                  type="text"
+                  class="form-control input mx-2 py-4 px-0"
+                  id="user-name"
+                  placeholder="*****"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <label>تاكيد كلمة المرور</label>
+                <input
+                  type="text"
+                  class="form-control input mx-2 py-4 px-0"
+                  id="user-name"
+                  placeholder="*****"
+                />
+              </div>
+              <p>كلمه المرور يجب ان تحتوى على ارقام وحروف</p>
+            </div>
+            <div class="radios w-100">
+              <h6>التفعيل عن طريق</h6>
+              <div class="types">
+                <div class="one-type">
+                  <input
+                    type="radio"
+                    id="mobile"
+                    name="mobile"
+                    value="mobile"
+                  />
+                  <label for="mobile" class="type px-2">الجوال</label>
+                </div>
+                <div class="one-type mx-3">
+                  <input type="radio" id="email" name="email" value="email" />
+                  <label for="email" class=" type px-2">البريد الالكتروني</label>
+                </div>
+                <div class="one-type">
+                  <input
+                    type="radio"
+                    id="whats-app"
+                    name="whats-app"
+                    value="whats-app"
+                  />
+                  <label for="whats-app" class="type px-2">الواتساب</label>
+                </div>
+              </div>
+              <div>
+                <div class="row checkbox">
+                  <input class="mx-2" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label class="checkbox-text" for="vehicle1">اوفق على <span class="terms-text mx-1">الشروط والاحكام</span></label><br>
+                </div>
+                <div class="row checkbox">
+                  <input class="mx-2" type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label class="checkbox-text2" for="vehicle2"><small>اوافق على ارسال الرسائل الترويجية</small></label><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 left-section">
+          <img class="back" src="assets/images/back.png" />
+          <img class="sign-up" src="assets/images/sign-up.png" />
+          <h2 class="did-you-forget-password">انشاء حساب جديد</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

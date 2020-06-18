@@ -1,5 +1,4 @@
 .the-input {
-  border-width: 1px;
   border-color: #fbfbfb;
   background-color: #fbfbfb;
 }
@@ -15,7 +14,8 @@
 }
 
 .input-group {
-  background-color: #fbfbfb;
+  background-color: #fff;
+  width: 90%;
 }
 
 h3 {
@@ -34,6 +34,10 @@ div {
 .input-group > .form-control:not(:last-child) {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+.input-group-prepend {
+  background-color: #fff;
 }
 
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
@@ -59,5 +63,56 @@ div {
 
 .site-page {
   margin-top: 3.5rem;
+}
+
+.search-title {
+  color: #e1e316;
+}
+
+.result {
+  display: none;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48%;
+  border-color: #fff;
+  border-radius: 10px;
+}
+
+img {
+  height: 62.45px;
+  width: 62.45px;
+}
+
+.name {
+  color: #48586780;
+}
+
+.email {
+  color: #7070708c;
+}
+
+.full-row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=black-list.css.map */

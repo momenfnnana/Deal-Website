@@ -21,6 +21,15 @@
 }
 
 .point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 4rem;
   width: 4rem;
   background-color: #EFE817;
@@ -28,11 +37,8 @@
 }
 
 .number-span {
-  position: absolute;
   font-size: 2rem;
   color: #fff;
-  right: 2.5rem;
-  top: 1.8rem;
 }
 
 @media (max-width: 400px) {
@@ -40,11 +46,8 @@
     border-radius: 2.1rem;
   }
   .point {
-    height: 3rem;
+    height: 1.9rem;
     width: 3rem;
-  }
-  .number-span {
-    right: 2rem;
   }
 }
 
@@ -58,5 +61,22 @@
   .card.my-3 {
     border-radius: 1.5rem;
   }
+}
+
+.text-center {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.getting-points-text {
+  color: #000;
+}
+
+.points {
+  color: #000;
+}
+
+.mr-3, .mx-3 {
+  margin-right: 2rem !important;
 }
 /*# sourceMappingURL=amrtidall.css.map */
