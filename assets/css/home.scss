@@ -94,24 +94,6 @@ a:hover {
   margin-bottom: 0rem;
 }
 
-.card {
-  position: relative;
-  border-radius: 1rem;
-  border: none;
-  font-size: 75%;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
-  height: 25rem;
-}
-
-.head-card {
-  height: 11rem;
-  width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  position: relative;
-  background-size: cover;
-}
-
 .bg-card1{
   background-image: url("../images/index-img-card.svg");
 }
@@ -122,102 +104,6 @@ a:hover {
 
 .bg-card3{
   background-image: url("../images/bg-card-home2.svg");
-}
-
-// .head-card img{
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   right: 0;
-//   left: 0;
-//   border-top-left-radius: 1rem;
-//   border-top-right-radius: 1rem;
-// }
-
-.fixed-label {
-  height: 2rem;
-  width: 3rem;
-  color: #474747;
-  background-color: #cacf2b;
-  border-top-right-radius: 50rem !important;
-  border-bottom-right-radius: 50rem !important;
-  margin-bottom: -1rem;
-}
-
-.love-icon-card {
-  height: 2.25rem;
-  width: 2.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: 1px #e2e2e2 solid;
-  font-size: 0.8rem;
-  transition: .4s;
-  i {
-    color: #707070;
-    transition: .4s;
-  }
-  &.active{
-    background-color: #ec4b5a;
-    border: 1px #fff solid;
-    i{
-      color: #fff;
-    }
-  }
-
-}
-
-
-.body-card-icon i {
-  font-size: 1rem;
-  color: #b8b8b8;
-}
-
-.body-card-icon p {
-  margin: 0em;
-  color: #707070;
-  font-weight: bolder;
-}
-
-.body-card h6 {
-  color: #111111;
-  font-weight: bolder;
-  font-size: 0.85rem;
-}
-
-.content-card-text {
-  color: #707070;
-  font-size: 0.7rem;
-}
-
-.body-card h5 {
-  color: #707070;
-  font-weight: bolder;
-}
-
-.full-star {
-  color: #f8da48 !important;
-}
-
-.empty-star {
-  color: #e2e2e2;
-}
-
-.star-icon {
-  transform: rotate(107deg);
-  font-size: 0.85rem;
-}
-
-.time-publish i {
-  font-size: 0.8rem;
-  color: #b8b8b8;
-}
-
-.time-publish p {
-  margin: 0;
-  color: #b8b8b8;
-  font-size: 0.55rem;
 }
 
 .ad-area-lg {
@@ -292,27 +178,94 @@ a:hover {
   }
 }
 
+// select2
+// .select2{
+//   .select2-container--default .select2-selection--single{
+//     margin: auto;
+//     width: 100%;
+//   }
+// }
+.select2-container--default .select2-selection--single{
+  // height: 37px;
+  // width: 148px; 
+  min-width: 150px; 
+  padding: .5rem 1rem;
+  font-size: 1.2em;  
+  position: relative;
+  border: none !important;
+  border-radius: 0.4rem;
+}
 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  width: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  padding: 4px 12px;
+  height: 27px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 20px;
+}
+
+.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered{
+  padding: 0 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #909090 !important;
+  font-size: 1rem !important;
+  line-height: inherit !important;
+}
+
+.select2-container .select2-selection--single{
+  height: 100% !important;
+  padding-right: 1rem;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  left: 1rem !important;
+}
 .shared-deal,.shared-deal  i{
   color: #fff !important;
   font-weight: bold;
 }
 
-.create-ad-card{
-  background-color: #EFEFEF;
+.order-icon{
+  background-color: #fff;
+  padding: 0.65rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in;
+  &.active{
+    background-color: #888;
+    transition: 0.3s ease-in;
+    i{
+      color: #fff;
+      transition: 0.3s ease-in;
+    }
+  }
 }
 
-.create-ad-card i{
-  font-size: 3rem;
-  color: #707070;
+.rounded-img-card{
+  border-radius: 0 !important;
+  border-top-right-radius: 1rem !important ;
+  border-bottom-right-radius: 1rem !important ;
 }
 
-.fixed-ad{
-  color: #707070;
-  font-weight: bolder;
-  margin-top: 5rem;
-}
+.label-fixed-grid{
+  border-top-left-radius:0 !important ;
+  border-top-right-radius:0 !important ;
+  border-bottom-right-radius: 0.8rem !important ;
+  border-bottom-left-radius: 0 !important ;
+} 
 
+
+
+@media (max-width: 575px) {
+  .fixed-ad{
+    margin-top: 2rem;
+  }
+}
 @media (max-width: 600px) {
   .card-home {
     margin-top: 1rem;

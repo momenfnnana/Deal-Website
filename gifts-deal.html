@@ -47,9 +47,9 @@
       <div class="row">
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -66,17 +66,85 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-primary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
                 اطلب هديتك
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -93,17 +161,85 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-primary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
                 اطلب هديتك
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -120,17 +256,85 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-primary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
                 اطلب هديتك
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -147,17 +351,86 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-primary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
                 اطلب هديتك
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -174,152 +447,86 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
-                اطلب هديتك
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
-                اطلب هديتك
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
-                اطلب هديتك
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
-                اطلب هديتك
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-primary btn py-2 w-100">
-                اطلب هديتك
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-secondary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                disabled
+              >
                 غير متوفر
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -336,17 +543,86 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-secondary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                disabled
+              >
                 غير متوفر
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -363,17 +639,86 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-secondary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                disabled
+              >
                 غير متوفر
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
+            <div class="align-items-start d-flex head-card justify-content-center">
               <img
-                class="mx-auto img-fluid"
+                class="img-fluid"
                 src="assets/images/camira.svg"
                 alt="كاميرا"
               />
@@ -390,228 +735,82 @@
               </div>
             </div>
             <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
+              <button
+                type="button"
+                class="btn btn-secondary btn py-2 w-100"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                disabled
+              >
                 غير متوفر
               </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mx-auto" id="staticBackdropLabel">
+                        بيانات مقدم الطلب
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form class="text-right"  action="">
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الاسم:</p>
+                            <p>admin</p>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row ">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">الاسم كامل:</label>
+                            <input placeholder="من فضلك أدخل اسمك كاملاً" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form input-row">
+                          <div class="d-flex justify-content-between align-items-end width-row-modal">
+                            <label for="full-name" class="w-50">العنوان:</label>
+                            <input placeholder="وين تبي توصل هديتك" class="form-control input shadow-sm" type="text" id="full-name" name="full-name">
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الجوال:</p>
+                            <div>
+                              <p>0565154862</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-center mb-2 row-modal-form">
+                          <div class="d-flex justify-content-between width-row-modal">
+                            <p>الإيميل:</p>
+                            <p>dask2@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0">
+                        <button
+                        type="button"
+                        class="btn btn-secondary mx-auto w-50 btn-gift"
+                        >
+                        تأكيد طلب الهدية والإرسال
+                      </button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-          <div class="card ml-2 mb-4">
-            <div class="head-card mx-auto">
-              <img
-                class="mx-auto img-fluid"
-                src="assets/images/camira.svg"
-                alt="كاميرا"
-              />
-            </div>
-            <div class="body-card">
-              <h1 class="text-center">كاميرا</h1>
-              <div class="d-flex justify-content-between px-3">
-                <p>فئه العميل:</p>
-                <p>كلاسيكية</p>
-              </div>
-              <div class="d-flex justify-content-between px-3">
-                <p>عدد النقاط اللازمة للهدية:</p>
-                <p>1000</p>
-              </div>
-            </div>
-            <div class="footer-card">
-              <button type="button" class="btn btn-secondary btn py-2 w-100">
-                غير متوفر
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
 

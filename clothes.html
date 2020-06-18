@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>الملابس</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+    <link rel="stylesheet" href="./assets/css/clothes.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body>
+    <section class="container text-right">
+      <!-- search form -->
+      <form class="mt-5 first-form pt-3">
+        <div class="background-form">
+          <div class="form-row">
+            <div class="form-group col-lg-6 mb-3">
+              <div
+                class="d-flex d-flex pl-4 rounded search-container py-1 pr-2 ml-lg-5"
+              >
+                <input
+                  class="input-search form-control border-0"
+                  type="search"
+                  placeholder="ابحث عن السلعة ..."
+                  aria-label="Search"
+                />
+                <button class="my-auto">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="form-group col-lg-6 mb-3">
+              <div class="">
+                <select id="inputState" class="form-control h-100">
+                  <option selected>كل المدن</option>
+                  <option>BMW</option>
+                  <option>Audi</option>
+                  <option>Maruti</option>
+                  <option>Tesla</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <div class="mb-3 mb-lg-0 ml-lg-5">
+                <select id="inputState" class="form-control h-100">
+                  <option selected>اختر القسم رئيسي </option>
+                  <option>BMW</option>
+                  <option>Audi</option>
+                  <option>Maruti</option>
+                  <option>Tesla</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <div class="">
+                <select id="inputState" class="form-control h-100">
+                  <option selected>اختر القسم وفرعي </option>
+                  <option>BMW</option>
+                  <option>Audi</option>
+                  <option>Maruti</option>
+                  <option>Tesla</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- path -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-inline-block">
+          <li class="breadcrumb-item active d-inline">ملابس</li>
+          <li class="breadcrumb-item d-inline" aria-current="page">
+            الأقسام الفرعية
+          </li>
+        </ol>
+      </nav>
+
+      <!-- cards -->
+
+      <div class="row mt-3 mb-5">
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div
+            class="align-items-center card d-flex justify-content-center mb-4 create-ad-card"
+          >
+            <button class="h-100 w-100">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-plus-circle"></i>
+              </div>
+              <h5 class="fixed-ad">ثبت اعلانك هنا</h5>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+              style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+              <div
+                class="fixed-label align-items-center d-flex fixed-label justify-content-center"
+              >
+                <span>مثبت</span>
+              </div>
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+              style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+              <div
+                class="fixed-label align-items-center d-flex fixed-label justify-content-center"
+              >
+                <span>مثبت</span>
+              </div>
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+              style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+              <div
+                class="fixed-label align-items-center d-flex fixed-label justify-content-center"
+              >
+                <span>مثبت</span>
+              </div>
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+            style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+            style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+            style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mb-4">
+            <div
+            style="background-image: url('assets/images/index-img-card.svg');"
+              class="head-card align-items-end d-flex head-card justify-content-end"
+            >
+            </div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/nav-footer.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

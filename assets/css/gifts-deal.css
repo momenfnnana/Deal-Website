@@ -78,4 +78,70 @@ button:focus {
 .body-card p {
   font-size: 0.8rem !important;
 }
+
+.modal {
+  color: #707070;
+  font-weight: bolder;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.row-modal-form {
+  background-color: #B8B8B847;
+  padding: 0.5rem;
+}
+
+.row-modal-form p {
+  margin: 0;
+}
+
+.row-modal-form .width-row-modal {
+  width: 65%;
+}
+
+.row-modal-form ::-webkit-input-placeholder {
+  font-size: 0.7rem;
+  color: #B8B8B8;
+  font-weight: bolder;
+}
+
+.row-modal-form :-ms-input-placeholder {
+  font-size: 0.7rem;
+  color: #B8B8B8;
+  font-weight: bolder;
+}
+
+.row-modal-form ::-ms-input-placeholder {
+  font-size: 0.7rem;
+  color: #B8B8B8;
+  font-weight: bolder;
+}
+
+.row-modal-form ::placeholder {
+  font-size: 0.7rem;
+  color: #B8B8B8;
+  font-weight: bolder;
+}
+
+.row-modal-form input {
+  border-color: #70707041;
+  background-color: inherit;
+}
+
+.row-modal-form input:focus {
+  background-color: #fff;
+}
+
+.input-row {
+  background-color: #F1F3F5 !important;
+  opacity: 0.57;
+}
+
+.btn-gift {
+  background-color: #707070;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
 /*# sourceMappingURL=gifts-deal.css.map */
