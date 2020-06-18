@@ -12,7 +12,7 @@
 
 .search-container {
   background-color: #fbfbfb;
-}
+} 
 
 .input-search {
   background-color: transparent;
@@ -63,6 +63,52 @@ button:focus {
 .body-card p {
   font-size: 0.8rem !important;
 }
-.pl-5, .px-5 {
-  padding-left:0 !important ;
+
+.modal{
+  color: #707070;
+  font-weight: bolder;
+}
+
+// .modal-header{
+//   border-bottom: none;
+// }
+
+.modal-body {
+  padding: 0;
+}
+
+.row-modal-form{
+  background-color: #B8B8B847;
+  
+  padding: 0.5rem;
+  p{
+    margin: 0;
+  }
+  .width-row-modal{
+    width: 65%;
+  }
+  ::placeholder{
+    font-size: 0.7rem;
+    color: #B8B8B8;
+    font-weight: bolder;
+  }
+  input{
+    border-color:#70707041 ;
+    background-color: inherit;
+  }
+  input:focus{
+    background-color:#fff ;
+  }
+  
+}
+
+.input-row{
+  background-color: #F1F3F5 !important;
+  opacity: 0.57;
+}
+
+.btn-gift{
+  background-color :#707070;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
