@@ -9,30 +9,17 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-    <!-- <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css"
-      rel="stylesheet"
-    /> -->
-    <!-- <script>
-      $(document).ready(function () {
-        var allCountries = ["السعودية", "مصر", "الامارات", "دبي"];
-        $("#countries").select({
-          data: allCountries
-        });
-      });
-    </script> -->
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/custome.css" />
 
@@ -73,45 +60,65 @@
                 placeholder="moh.ah@gmail.com"
               />
             </div>
-            <div class="form-row">
-              <!-- select 2js -->
-              <!-- <div class="form-group">
-                <div>
-                  <label>الجوال</label>
-                  <input
-                    type="text"
-                    class="form-control input w-50 py-4 px-0"
-                    id="user-name"
-                    placeholder="57756666"
-                  />
-                  <input
-                    type="text"
-                    class="form-control input w-25 py-4 px-0"
-                    id="user-name"
-                    placeholder="+996"
-                  />         
-                  <div>
-                  <label>المدينة</label>
-                  <select class="choose-country">
-                    <option>فلسطين</option>
-                    <option>الاردن</option>
-                    <option>السعودية</option>
-                    <option>مصر</option>
-                    <option>دبي</option>
-                    <option>الامارات</option>
-                  </select>
-                </div>
-              </div> -->
-                <!-- select 2js -->
+            <!-- <div class="form-group col-12 col-md-4">
+              <select
+                id=" "
+                class="form-control h-25 px-3 select2"
+                name="city"
+                style="width: 100%;"
+              >
+                <option>كل المدن</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Maruti</option>
+                <option>Tesla</option>
+              </select>
+            </div> -->
+            <!-- select 2js -->
+            <div class="d-flex justify-content-between w-100">
+              <label class="align-self-start px-3">الجوال</label>
+              <label class="align-self-start px-3 w-50">المدينة</label>
             </div>
+            <div class="d-flex justify-content-around w-100">
+              <select
+                id=" "
+                class="form-control h-25 px-3 select2"
+                name="city"
+                style="width: 100%;"
+              >
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Maruti</option>
+                <option>Tesla</option>
+              </select>
+              <select
+                id=" "
+                class="form-control h-25 px-3 select2"
+                name="city"
+                style="width: 100%;"
+              >
+                <option>كل المدن</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Maruti</option>
+                <option>Tesla</option>
+              </select>
+              <select
+                id=" "
+                class="form-control h-25 px-3 select2"
+                name="city"
+                style="width: 100%;"
+              >
+                <option>كل المدن</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Maruti</option>
+                <option>Tesla</option>
+              </select>
+            </div>
+            <!-- select 2js -->
             <div class="how-did-know-us w-100">
               <label>كيف عرفت ديل</label>
-              <!-- <input
-                type=""
-                class="form-control input w-100 py-4 px-0"
-                id="user-name"
-                placeholder="اختر مدينة"
-              /> -->
               <select name="know-us" id="social" class="know-us w-100">
                 <option value="facebook">فيسبوك</option>
                 <option value="instagram">انستا</option>
@@ -164,7 +171,8 @@
                       name="defaultExampleRadios"
                     />
                     <label class="custom-control-label" for="email"
-                      >البريد الإلكتروني</label>
+                      >البريد الإلكتروني</label
+                    >
                   </div>
                   <!-- Default unchecked -->
                   <div class="custom-control custom-radio">
@@ -242,5 +250,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   </body>
 </html>
