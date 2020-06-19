@@ -28,8 +28,12 @@
     <section class="container-fluid">
       <div class="row">
         <div class="profile-head">
-          <p class="title site-page px-5">الملف الشخصي</p>
-          <i class="fas fa-flag flag"></i>
+          <div class="d-flex site-page px-5">
+            <p class="title">الملف الشخصي</p>
+            <a type="button" data-toggle="modal" data-target="#report">
+              <i class="fas fa-flag flag"></i>
+            </a>
+          </div>
           <div style="display: flex; justify-content: center;">
             <div class="user-details">
               <div class="img-fluid">
@@ -225,7 +229,7 @@
                     </p>
                     <input
                       type="email"
-                      class="form-control w-75 modal-input"
+                      class="form-control w-75 rounded-pill"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       placeholder="أضف هنا اسمك المدرج في الحوالة البنكية"
@@ -302,6 +306,86 @@
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        
+        <!-- Modal -->
+        <div
+        class="modal fade"
+        id="report"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="#cardModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="border-bottom: none;">
+              <h5
+                class="modal-title"
+                style="width: 100%; text-align: center;"
+                id="exampleModalLongTitle"
+              >
+               التبليغ عن اساءة
+              </h5>
+              <button
+                type="button"
+                style="position: absolute; left: 10px;"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <section class="container-fluid">
+                <div class="row px-2 my-1 justify-content-between">
+                  <p class="modal-card-title my-1">
+                    <strong>عنوان السكن:</strong>
+                  </p>
+                  <input
+                    type="email"
+                    class="form-control w-75 rounded-pill"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="اكتب هنا مكان السكن"
+                  />
+                </div>
+                <div class="row px-2 my-1">
+                  <p class="w-25 modal-card-title" style="text-align: right;">
+                    <strong>نوع الاساءة:</strong>
+                  </p>
+                  <input
+                    type="text"
+                    class="form-control w-75 rounded-pill"
+                    id="reportType"
+                    aria-describedby="emailHelp"
+                    placeholder="اكتب هنا نوع الاساءة"
+                  />
+                </div>
+                <div class="row px-2 my-1">
+                  <p class="w-25 modal-card-title">
+                    <strong>اضافة تعليق</strong>
+                  </p>
+                  <textarea class="form-control w-75 rounded-lg" placeholder="اضافة تعليق...."></textarea>
+                </div>
+                <div
+                  class="modal-footer"
+                  style="
+                    border-top: none;
+                    display: flex;
+                    justify-content: flex-end;
+                  "
+                >
+                  <button type="button" class="btn btn-primary rounded-pill px-4">
+                    إرسال
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
         <!-- Modal -->
         <div id="ad-cards" class="row site-page-card justify-content-center">
           <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
@@ -890,10 +974,31 @@
           text: "سيتم حذف المنتج",
           icon: "warning",
           dangerMode: true,
+          buttons: {
+            cancel: {
+            text: "الغاء",
+            value: null,
+            visible: true,
+            className: "",
+            closeModal: true,
+          },
+          confirm: {
+            text: "حذف",
+            value: true,
+            visible: true,
+            className: "",
+            closeModal: true
+          }
+          }
         })
         .then(willDelete => {
           if (willDelete) {
-            swal("تم الحذف", "تم حذف المنتج", "success");
+            swal({
+              title:"تم الحذف",
+              text:"تم حذف المنتج",
+              icon:"success",
+              button: "تم",
+              });
           }
         });
       }
