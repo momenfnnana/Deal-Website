@@ -1,41 +1,50 @@
-input,select{
-    background-color: #FBFBFB !important;
-    color: #909090 !important;
+input,
+select {
+  background-color: #fbfbfb !important;
+  color: #909090 !important;
 }
 
-.search-container{
-    background-color: #FBFBFB !important;
+.search-container {
+  background-color: #fbfbfb !important;
 }
 
-.background-form{
-    background-color: #EBEBEB;
-    padding: 2rem 1rem;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
+.background-form {
+  background-color: #ebebeb;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .form-group {
-    margin-bottom: 0rem; 
+  margin-bottom: 0rem;
 }
 
 .form-control {
-    border: none !important;
+  border: none !important;
 }
 
 .breadcrumb {
-    background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
-.breadcrumb-item{
-    color: #707070
+.breadcrumb-item {
+  color: #707070;
 }
 
 .breadcrumb-item.active {
-    color: #000000;
-    font-size: 1.2rem;
-    font-weight: bold;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
-    margin-left: 0.8rem;
+.breadcrumb-item + .breadcrumb-item::before {
+  margin-left: 0.8rem;
+}
+
+.select2-container .select2-selection--single {
+  height: 46px !important;
+}
+
+li a {
+  color: inherit !important;
 }

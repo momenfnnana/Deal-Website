@@ -5,6 +5,10 @@ body {
   direction: rtl;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .dropdown-toggle::after {
   content: none;
 }
@@ -206,6 +210,10 @@ footer {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   background-color: #ebebeb24;
+}
+
+footer img {
+  width: 7rem;
 }
 
 footer p {

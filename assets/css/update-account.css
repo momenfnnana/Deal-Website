@@ -9,4 +9,16 @@
 .save-btn {
   background-color: #CACF2B !important;
 }
+
+#upload-image:hover {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+#upload-image:hover #icon-camera {
+  display: block !important;
+}
+
+.form-control {
+  border: none;
+}
 /*# sourceMappingURL=update-account.css.map */

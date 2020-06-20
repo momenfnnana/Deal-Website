@@ -4,15 +4,10 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-//
-$(".nav-link").on("click", function (e) {
-  $(this).parent().addClass("active").siblings().removeClass("active");
-  e.preventDefault();
-});
-
 $(".love-icon-card").click(function (e) {
   $(this).toggleClass("active");
 });
+
 // copy share link
 var clipboard = new ClipboardJS("#copy-share-link");
 // $("#copy-share-link").click(function (e) {
