@@ -87,4 +87,16 @@
   z-index: 1000;
   background: transparent;
 }
+
+.select2-container .select2-selection--single {
+  height: 37px !important;
+}
+
+.form-control {
+  border: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: -2px !important;
+}
 /*# sourceMappingURL=create-ad.css.map */

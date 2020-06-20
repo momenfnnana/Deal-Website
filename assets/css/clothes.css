@@ -1,14 +1,15 @@
-input, select {
-  background-color: #FBFBFB !important;
+input,
+select {
+  background-color: #fbfbfb !important;
   color: #909090 !important;
 }
 
 .search-container {
-  background-color: #FBFBFB !important;
+  background-color: #fbfbfb !important;
 }
 
 .background-form {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
@@ -23,7 +24,7 @@ input, select {
 }
 
 .breadcrumb {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .breadcrumb-item {
@@ -38,5 +39,13 @@ input, select {
 
 .breadcrumb-item + .breadcrumb-item::before {
   margin-left: 0.8rem;
+}
+
+.select2-container .select2-selection--single {
+  height: 46px !important;
+}
+
+li a {
+  color: inherit !important;
 }
 /*# sourceMappingURL=clothes.css.map */

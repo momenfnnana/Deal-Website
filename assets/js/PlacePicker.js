@@ -22,7 +22,7 @@ $.fn.PlacePicker = function (t) {
     $(this).closest("div").append(function(){
         var left = $(this).offset().left+$(this).width() - 40;
         var top = $(this).offset().top+5;
-        var btn = $('<div class="placePickerUIButton" title="Pick location from map" style="position:absolute;top: '+top+'px;left: '+left+'px;z-index: 1000;"><div class="'+params.btnClass+'"><i class="fas fa-map-marker-alt"></i></div></div>');
+        var btn = $('<div class="placePickerUIButton" title="Pick location from map" style="position:absolute;top: '+top+'px;left: '+left+'px;z-index: 1000;"><div class="'+params.btnClass+'"><i class="fas fa-map-marker-alt" style="color:#707070"></i></div></div>');
         $(this).append(btn);
         btn.click(function(){
             if($("body").find(".modal.placePicker").length==0){
