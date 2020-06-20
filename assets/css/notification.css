@@ -27,6 +27,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f7f7ff;
+  -webkit-box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1) !important;
 }
 
 .image-and-light {
@@ -134,7 +136,6 @@ h6 {
 }
 
 .full-card {
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

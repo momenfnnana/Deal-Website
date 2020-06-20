@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{yourPage}</title>
+    <title>الصفحة الشخصية</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -37,12 +37,14 @@
           <div style="display: flex; justify-content: center;">
             <div class="user-details">
               <div class="img-fluid">
-                <p class="profile-title-with-image">الملف الشخصي</p>
+                <p class="profile-title-with-image mt-2">الملف الشخصي</p>
                 <img src="assets/images/profile-pic.png" />
               </div>
-              <div class="admin-and-flag">
+              <div class="admin-and-flag align-items-baseline">
                 <h3 class="admin">admin</h3>
-                <i class="fas fa-flag flag my-2"></i>
+                <a type="button" data-toggle="modal" data-target="#report">
+                  <i class="fas fa-flag flag"></i>
+                </a>
               </div>
               <div>
                 <i
@@ -187,7 +189,7 @@
       </div>
     </section>
     <section class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center m-0">
         <h3 class="result d-none py-5">
           لا يوجد اعلانات لك حتى الان .. ضف اول اعلان لك واحصل على 1000 نقطة من
           أمر ديل
@@ -970,7 +972,7 @@
     <script>
       function deleteAlert(){
         swal({
-          title: "هل انت متأكد تريد الحذف؟ ☹",
+          title: "هل انت متأكد تريد الحذف؟",
           text: "سيتم حذف المنتج",
           icon: "warning",
           dangerMode: true,
