@@ -57,6 +57,7 @@ h6 {
 
 .card:hover h6 {
   display: block;
+  font-size: 10px;
 }
 
 .textarea {
