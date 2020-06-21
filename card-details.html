@@ -47,7 +47,7 @@
               <img
                 class="owl-lazy item"
                 data-src="assets/images/poster.png"
-                style="border-radius: 20px;"
+                style="border-radius: 20px;object-fit: cover;"
                 alt=""
               />
               <div class="love-icon-card for-slider mt-2">
@@ -60,7 +60,7 @@
               <img
                 class="owl-lazy item"
                 data-src="assets/images/image-card.png"
-                style="border-radius: 20px;"
+                style="border-radius: 20px;object-fit: cover;"
                 alt=""
               />
               <div class="love-icon-card for-slider mt-2">
@@ -87,7 +87,9 @@
           </p>
           <div class="above-card">
             <p class="costs"><strong>تواصل مع المؤجر</strong></p>
-            <i class="fas fa-flag flag"></i>
+            <a type="button" data-toggle="modal" data-target="#report">
+              <i class="fas fa-flag flag"></i>
+            </a>
           </div>
           <!-- border-color inside new div -->
               <div class="card">
@@ -168,9 +170,9 @@
                       style="text-align: right; font-size: 24px;"
                     ></i>
                   </div>
-                  <div>
-                    <h6 style="text-align: center; color: #8e8f94;">4.0</h6>
-                    <p style="text-align: center; color: #8e8f94;">
+                  <div class="my-3">
+                    <h6 class="mb-0" style="text-align: center; color: #8e8f94;">4.0</h6>
+                    <p class="mb-0" style="text-align: center; color: #8e8f94;">
                       <small>1.38M Ratings</small>
                     </p>
                   </div>
@@ -222,7 +224,9 @@
                   <button type="button" class="btn btn-outline-secondary">
                     رد<i class="fas fa-share"></i>
                   </button>
-                  <i class="fas fa-flag align-self-center mx-3"></i>
+                  <a class="align-self-center mx-3" type="button" data-toggle="modal" data-target="#report">
+                    <i class="fas fa-flag"></i>
+                  </a>
                 </div>
               </div>
               <div class="add-new-comment">
@@ -517,7 +521,91 @@
         </div>
       </div>
     </section>
-
+ <!-- Modal -->
+ <div
+ class="modal fade"
+ id="report"
+ tabindex="-1"
+ role="dialog"
+ aria-labelledby="#cardModal"
+ aria-hidden="true"
+>
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <div class="modal-header" style="border-bottom: none;">
+       <h5
+         class="modal-title"
+         style="width: 100%; text-align: center;"
+         id="exampleModalLongTitle"
+       >
+         التبليغ عن اساءة
+       </h5>
+       <button
+         type="button"
+         style="position: absolute; left: 10px;"
+         class="close"
+         data-dismiss="modal"
+         aria-label="Close"
+       >
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+       <section class="container-fluid">
+         <div class="row px-2 my-1 justify-content-between">
+           <p class="modal-card-title my-1">
+             <strong>عنوان السكن:</strong>
+           </p>
+           <input
+             type="email"
+             class="form-control w-75 rounded-pill"
+             id="exampleInputEmail1"
+             aria-describedby="emailHelp"
+             placeholder="اكتب هنا مكان السكن"
+           />
+         </div>
+         <div class="row px-2 my-1">
+           <p class="w-25 modal-card-title" style="text-align: right;">
+             <strong>نوع الاساءة:</strong>
+           </p>
+           <input
+             type="text"
+             class="form-control w-75 rounded-pill"
+             id="reportType"
+             aria-describedby="emailHelp"
+             placeholder="اكتب هنا نوع الاساءة"
+           />
+         </div>
+         <div class="row px-2 my-1">
+           <p class="w-25 modal-card-title">
+             <strong>اضافة تعليق</strong>
+           </p>
+           <textarea
+             class="form-control w-75 rounded-lg"
+             placeholder="اضافة تعليق...."
+           ></textarea>
+         </div>
+         <div
+           class="modal-footer"
+           style="
+             border-top: none;
+             display: flex;
+             justify-content: flex-end;
+           "
+         >
+           <button
+             type="button"
+             class="btn btn-primary rounded-pill px-4"
+           >
+             إرسال
+           </button>
+         </div>
+       </section>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- Modal -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
