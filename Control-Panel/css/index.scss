@@ -1,0 +1,121 @@
+.head {
+    width: "100%";
+    background-color: #ebebeb;
+    height: 60vh;
+    .head-title {
+        color: #e2e417;
+        font-weight: bold;
+    }
+    .profile-head {
+        background-color: #fff;
+        // width: 100%;
+        border-radius: 10px;
+        .button-groups {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: flex-end;
+            .the-button {
+                color: #fff;
+                font-size: 14px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.button-groups .the-button {
+    color: #959595 !important;
+    background-color: #fff !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.button-groups button:hover {
+    background-color: #e2e417 !important;
+    color: #fff !important;
+    z-index: 1;
+}
+.content {
+    .title {
+        color: #707070;
+        font-weight: bold;
+    }
+    .the-button {
+        background-color: #2bcf78;
+        border-radius: 20px;
+    }
+}
+.result-titles {
+    color: #707070;
+    font-weight: bold;
+}
+.special-result-title {
+    color: #b8b8b8;
+    font-weight: bold;
+}
+.specialize-result {
+    background-color: #ebebeb;
+    height: 15vh;
+    border-radius: 8px;
+    .select-title {
+        color: #707070;
+    }
+}
+@media (max-width: 991px) {
+    .specialize-result {
+        height: 35vh;
+    }
+}
+.dtHorizontalExampleWrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#dtHorizontalExample th,
+td {
+    white-space: nowrap;
+}
+.table-title {
+    color: #707070;
+    font-weight: bold;
+}
+.table-row-data {
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+@media (max-width: 991px) {
+    .table-row {
+        height: 100%;
+        background-color: #ebebeb;
+        border-radius: 10px;
+        .table-row-data {
+            background-color: #ebebeb;
+            border-radius: 10px;
+        }
+    }
+}
+.btn-warning {
+    color: #fff !important;
+    background-color: #e2e417;
+}
+.modal-header {
+    border: none;
+}
+.modal-footer {
+    border: none;
+}
+.edit-modal-content {
+    background-color: #ebebeb;
+    width: 95%;
+    border-radius: 10px;
+}
+.input-label {
+    color: #707070;
+    font-weight: bolder;
+}
+.form-control {
+    border: none;
+}
+.modal-title {
+    color: #707070;
+    font-weight: bolder;
+}

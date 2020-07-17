@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>الرئيسية</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/custome.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="head d-flex flex-column justify-content-between align-items-center">
+        <h2 class="head-title my-3">لوحة التحكم</h4>
+            <img class="w-0 h-50" src="./images/control-panel.svg" alt="control-panel" />
+            <div class="profile-head container my-5">
+                <div class="row button-groups">
+                    <div class="col-12 d-flex px-0">
+                        <button id="my-ad" class="btn btn-primary the-button w-100 py-3">
+                            الرئيسية
+                        </button>
+                        <button id="my-fav-ad" class="my-ad btn btn-primary the-button w-100 py-3">
+                            الاقسام
+                        </button>
+                        <button id="chat" class="btn btn-primary the-button w-100 py-3">
+                            المدن
+                        </button>
+                        <button id="my-ad" class="btn btn-primary the-button w-100 py-3">
+                            المعلنين
+                        </button>
+                    </div>
+                    <div class="col-12 d-flex px-0">
+                        <button id="my-fav-ad" class="my-ad btn btn-primary the-button w-100 py-3">
+                            العضويات
+                        </button>
+                        <button id="chat" class="btn btn-primary the-button w-100 py-3">
+                            امر تدلل
+                        </button>
+                        <button id="my-fav-ad" class="my-ad btn btn-primary the-button w-100 py-3">
+                            برنامج الهدايا
+                        </button>
+                        <button id="chat" class="btn btn-primary the-button w-100 py-3">
+                            صلاحيات المشرفين
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <section class="container my-5">
+        <div class="row">
+            <div class="content col-12 d-flex justify-content-between my-5">
+                <h5 class="title">المعلنين</h5>
+                <button type="button" class="btn btn-secondary the-button px-4">إضافة معلن</button>
+            </div>
+            <h6 class="col-12 d-flex special-result-title">تخصيص النتائج</h6>
+            <div class="w-100 mx-auto d-flex align-items-center row specialize-result my-3">
+                <div class="w-100 d-flex col-12 col-lg-4 my-3">
+                    <label class="select-title d-flex justify-content-center align-items-center w-75">الاسم</label>
+                    <select id="first-num" class="form-control w-75 h-25 px-3 select2" name="first-num"
+                        style="width: 100%;">
+                        <option class="h-25">‎ضع الاسم</option>
+                        <option class="h-25">الاسم1</option>
+                        <option class="h-25">2الاسم</option>
+                        <option class="h-25">3الاسم</option>
+                        <option class="h-25">4الاسم</option>
+                    </select>
+                </div>
+                <div class="w-100 d-flex col-12 col-lg-4 my-3">
+                    <label class="select-title d-flex justify-content-center align-items-center w-75">المدينة</label>
+                    <select id="mobile" class="form-control w-75 h-25 px-3 select2" name="mobile" style="width: 100%;">
+                        <option class="h-25">اخترالمدينة</option>
+                        <option>المدينة1</option>
+                        <option>المدينة2</option>
+                        <option>المدينة3</option>
+                    </select>
+                </div>
+                <div class="w-100 d-flex col-12 col-lg-4 my-3">
+                    <label class="select-title d-flex justify-content-center align-items-center w-75">العضوية</label>
+                    <select id="city" class="form-control w-75 h-25 px-3 select2" name="city" style="width: 100%;">
+                        <option class="h-25">اختر العضوية</option>
+                        <option>العضوية1</option>
+                        <option>العضوية2</option>
+                        <option>العضوية3</option>
+                        <option>العضوية4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 my-lg-5 table-row">
+                <div class="col-6 col-lg-12 flex-lg-row flex-column my-lg-0 my-3 d-flex justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 flex-lg-row flex-column table-row-data my-lg-0 my-3 d-flex justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 mt-lg-5 table-row">
+                <div
+                    class="col-6 col-lg-12 my-lg-0 my-3 d-flex d-lg-none flex-lg-row flex-column justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 table-row-data my-lg-0 my-3 py-lg-3 py-0 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 table-row">
+                <div
+                    class="col-6 col-lg-12 my-lg-0 my-3 d-flex d-lg-none flex-lg-row flex-column justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 table-row-data my-lg-0 my-3 py-lg-3 py-0 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 table-row">
+                <div
+                    class="col-6 col-lg-12 my-lg-0 my-3 d-flex d-lg-none flex-lg-row flex-column justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 table-row-data my-lg-0 my-3 py-lg-3 py-0 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 table-row">
+                <div
+                    class="col-6 col-lg-12 my-lg-0 my-3 d-flex d-lg-none flex-lg-row flex-column justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 table-row-data my-lg-0 my-3 py-lg-3 py-0 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 table-row">
+                <div
+                    class="col-6 col-lg-12 my-lg-0 my-3 d-flex d-lg-none flex-lg-row flex-column justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 table-row-data my-lg-0 my-3 py-lg-3 py-0 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-lg-column flex-row my-3 table-row">
+                <div
+                    class="col-6 col-lg-12 my-lg-0 my-3 d-flex d-lg-none flex-lg-row flex-column justify-content-between">
+                    <h6 class="table-title text-center">اسم المعلن</h6>
+                    <h6 class="table-title text-center">رقم الجوال</h6>
+                    <h6 class="table-title text-center">العضوية</h6>
+                    <h6 class="table-title text-center">عدد النقاط</h6>
+                    <h6 class="table-title text-center">الاعدادات</h6>
+                </div>
+                <div
+                    class="col-6 col-lg-12 table-row-data my-lg-0 my-3 py-lg-3 py-0 d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                    <h6 class="table-title">محمد أحمد</h6>
+                    <h6 class="table-title">0565562526</h6>
+                    <h6 class="table-title">كلاسيكية</h6>
+                    <h6 class="table-title">150</h6>
+                    <div>
+                        <button type="button" class="btn btn-success rounded-pill px-2 px-sm-4" data-toggle="modal"
+                            data-target="#exampleModalCenter">تعديل</button>
+                        <button type="button" class="btn btn-danger rounded-pill px-2 px-sm-4"
+                            onclick="deleteAlert()">حذف</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h4 class="modal-title">تعديل المعلن</h4>
+                </div>
+                <div class="row modal-body mx-auto edit-modal-content">
+                    <div class="col-6 my-2">
+                        <h6 class="text-right input-label">الاسم</h6>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                    </div>
+                    <div class="col-6 my-2">
+                        <h6 class="text-right input-label">البريد المعلن</h6>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                    </div>
+                    <div class="col-6 my-2">
+                        <h6 class="text-right input-label">الجوال</h6>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                    </div>
+                    <div class="col-6 my-2">
+                        <h6 class="text-right input-label">العنوان</h6>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-warning rounded-pill px-5 py-2"
+                        data-dismiss="modal">تعديل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="./assets/js/nav-footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".select2").select2();
+
+            $('b[role="presentation"]').hide();
+
+            $(".select2-selection__arrow").append(
+                '<i class="fa fa-angle-down"></i>'
+            );
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#dtHorizontalExample').DataTable({
+                "scrollX": true
+            });
+            $('.dataTables_length').addClass('bs-select');
+        });
+    </script>
+    <script>
+        function deleteAlert() {
+            swal({
+                title: "هل انت متأكد تريد الحذف؟",
+                text: "سيتم حذف الاعلان",
+                icon: "warning",
+                dangerMode: true,
+                buttons: {
+                    cancel: {
+                        text: "الغاء",
+                        value: null,
+                        visible: true,
+                        className: "rounded-pill",
+                        closeModal: true,
+                    },
+                    confirm: {
+                        text: "حذف",
+                        value: true,
+                        visible: true,
+                        className: "rounded-pill",
+                        closeModal: true,
+                    },
+                },
+            }).then((willDelete) => {
+                if (willDelete) {
+                    swal({
+                        title: "تم الحذف",
+                        text: "تم حذف الاعلان",
+                        icon: "success",
+                        button: {
+                            text: "تم",
+                            className: "rounded-pill"
+                        },
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
