@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap&subset=arabic");
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: 95%;
+  direction: rtl;
+  color: #707070;
+}
+
+.head-contain{
+    background-color: #ebebeb;
+}
 .head {
     width: "100%";
-    background-color: #ebebeb;
-    height: 60vh;
+
+    // height: 60vh;
     .head-title {
         color: #e2e417;
         font-weight: bold;
@@ -9,32 +21,36 @@
     .profile-head {
         background-color: #fff;
         // width: 100%;
-        border-radius: 10px;
         .button-groups {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-self: flex-end;
+            
             .the-button {
-                color: #fff;
-                font-size: 14px;
-                background-color: #fff;
+                color: #959595 !important;
+                background-color: #fff !important;
+                border:none;
+                border-radius: 0;
+                padding: 0.7rem 2rem;
+
+                &.active{
+                    background-color: #e2e417 !important;
+                    color: #fff !important;
+                    
+                }
             }
+            .the-button:hover {
+                background-color: #e2e417 !important;
+                color: #fff !important;
+            }
+        }
+        .button-groups:first-child{
+            border-top-right-radius: 100px !important;
         }
     }
 }
 
-.button-groups .the-button {
-    color: #959595 !important;
-    background-color: #fff !important;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: none !important;
 }
-.button-groups button:hover {
-    background-color: #e2e417 !important;
-    color: #fff !important;
-    z-index: 1;
-}
+
 .content {
     .title {
         color: #707070;
@@ -61,10 +77,39 @@
         color: #707070;
     }
 }
+
+.green-btn{
+    background-color: #2BCF78 !important;
+}
+
+.red-btn{
+    background-color: #E20000 !important;
+}
+
+.blue-btn{
+    background-color: #15CBCB !important;
+    color: #fff !important;
+}
+.fa-download{
+    color: #55DB25;
+}
+
+th{
+   color: #707070
+}
+
+@media (min-width: 991px) {
+    #table{
+        margin-top: 5rem;
+    } 
+}
 @media (max-width: 991px) {
     .specialize-result {
         height: 35vh;
     }
+    #table{
+        margin-top: 2rem;
+    }   
 }
 .dtHorizontalExampleWrapper {
     max-width: 600px;

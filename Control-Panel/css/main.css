@@ -1,0 +1,259 @@
+.main-card {
+  color: #606060;
+  min-width: 10rem;
+  border-radius: 0.3rem;
+}
+
+.main-card h5 {
+  font-size: 13px;
+}
+
+.main-card h6 {
+  font-size: 11px;
+}
+
+#main-details button:hover {
+  background-color: #E2E417 !important;
+}
+
+#main-details .active {
+  background-color: #E2E417 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: transparent;
+}
+
+.btn-primary {
+  color: #646464;
+  background-color: transparent;
+  border-color: transparent !important;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+  font-size: 75%;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 20px;
+}
+
+.head-card {
+  min-height: 150px;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+  background-size: cover;
+}
+
+.fixed-label {
+  height: 2rem;
+  width: 3rem;
+  color: #474747;
+  background-color: #cacf2b;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+  margin-bottom: -1rem;
+}
+
+.love-icon-card {
+  height: 2.25rem;
+  width: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px #e2e2e2 solid;
+  font-size: 0.8rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.love-icon-card i {
+  color: #707070;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.love-icon-card.active {
+  background-color: #ec4b5a;
+  border: 1px #fff solid;
+}
+
+.love-icon-card.active i {
+  color: #fff;
+}
+
+.body-card {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.body-card-icon i {
+  font-size: 1rem;
+  color: #b8b8b8;
+}
+
+.body-card-icon p {
+  margin: 0em;
+  color: #707070;
+  font-weight: bolder;
+}
+
+.body-card h6 {
+  color: #111111;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+.content-card-text {
+  color: #707070;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+.body-card h5 {
+  color: #707070;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.full-star {
+  color: #f8da48 !important;
+}
+
+.empty-star {
+  color: #e2e2e2;
+}
+
+.star-icon {
+  -webkit-transform: rotate(107deg);
+          transform: rotate(107deg);
+  font-size: 0.85rem;
+}
+
+.time-publish i {
+  font-size: 0.8rem;
+  color: #b8b8b8;
+}
+
+.time-publish p {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 0.55rem;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #EFEFEF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mb-2, .my-2 {
+  margin-bottom: 0 !important;
+}
+
+.inside-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.one-follower {
+  height: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.btn-warning {
+  color: #fff;
+  height: 50%;
+  border-radius: 50px;
+}
+
+.btn-warning:hover {
+  color: #fff;
+}
+
+.modal-card-title {
+  text-align: right;
+  color: #707070;
+}
+
+.modal-card-description {
+  color: #707070;
+  text-align: right;
+}
+
+.btn-outline-info:hover {
+  color: #dc3545;
+  background-color: #c0c0c050;
+}
+
+button {
+  border: none !important;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+i {
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.btn-outline-info {
+  border: 1px #B8B8B8 solid !important;
+  padding: 0.3rem 1rem;
+}
+
+.btn-outline-info p {
+  font-size: 12px;
+  color: #707070;
+}
+
+.btn-outline-info i {
+  font-size: 13px;
+}
+
+#add-package .select2-selection__arrow .fa-angle-down {
+  margin: 0.3rem 0 !important;
+}
+
+.select2-selection__rendered {
+  color: #909090 !important;
+}
+
+.table-title i {
+  color: #55DB25;
+}
+/*# sourceMappingURL=main.css.map */

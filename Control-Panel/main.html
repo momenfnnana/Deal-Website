@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>الرئيسية</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/custome.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </head>
+
+  <body dir="rtl" class="text-right">
+    <div class="head-contain">
+      <div
+        class="container align-items-center d-flex flex-column head justify-content-between"
+      >
+        <h2 class="head-title my-5">لوحة التحكم</h2>
+        <img
+          class="mb-5 img-fluid"
+          src="./images/control-panel.svg"
+          alt="control-panel"
+        />
+        <div class="profile-head">
+          <div class="d-flex flex-wrap button-groups">
+            <a class="btn btn-primary the-button active" href="#">
+              الرئيسية
+            </a>
+            <a class="btn btn-primary the-button" href="#">
+              الاقسام
+            </a>
+            <a href="#" class="btn btn-primary the-button">
+              المدن
+            </a>
+            <a href="#" class="btn btn-primary the-button">
+              المعلنين
+            </a>
+            <a href="#" class="btn btn-primary the-button">
+              العضويات
+            </a>
+            <a href="#" class="btn btn-primary the-button">
+              امر تدلل
+            </a>
+            <a href="#" class="btn btn-primary the-button">
+              برنامج الهدايا
+            </a>
+            <a href="#" class="btn btn-primary the-button">
+              صلاحيات المشرفين
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="main" class="mt-5 container">
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="main-card shadow-sm text-center pt-3 pb-1 px-3 ml-3 mt-3">
+          <h5>عدد الطلبات بإنتظار التفعيل</h5>
+          <h1 class="my-3">55</h1>
+          <h6>طلب</h6>
+        </div>
+        <div class="main-card shadow-sm text-center pt-3 pb-1 px-3 ml-3 mt-3">
+          <h5>عدد الإعلانات</h5>
+          <h1 class="my-3">55</h1>
+          <h6>إعلان</h6>
+        </div>
+        <div class="main-card shadow-sm text-center pt-3 pb-1 px-3 ml-3 mt-3">
+          <h5>عدد الزوار</h5>
+          <h1 class="my-3">55</h1>
+          <h6>زائر</h6>
+        </div>
+        <div class="main-card shadow-sm text-center pt-3 pb-1 px-3 ml-3 mt-3">
+          <h5>عدد العملاء المسجلين</h5>
+          <h1 class="my-3">55</h1>
+          <h6>عميل</h6>
+        </div>
+        <div class="main-card shadow-sm text-center pt-3 pb-1 px-3 ml-3 mt-3">
+          <h5>طلبات الاستشاره</h5>
+          <h1 class="my-3">55</h1>
+          <h6>طلب</h6>
+        </div>
+        <div class="main-card shadow-sm text-center pt-3 pb-1 px-3 ml-3 mt-3">
+          <h5>العمولات المدفوعة</h5>
+          <h1 class="my-3">55</h1>
+          <h6>عمولة</h6>
+        </div>
+      </div>
+      <div id="main-details" class="d-flex flex-wrap mt-5 mb-4">
+        <button
+          id="recent-ads"
+          class="btn btn-primary px-3 ml-3 mt-3 rounded-pill active"
+        >
+          آخر الإعلانات
+        </button>
+        <button
+          id="wait-orders"
+          class="btn btn-primary px-3 ml-3 mt-3 rounded-pill"
+        >
+          طلبات بانتظار التفعيل
+        </button>
+        <button
+          id="review-works"
+          class="btn btn-primary px-3 ml-3 mt-3 rounded-pill"
+        >
+          عمولات بانتظار المراجعة
+        </button>
+      </div>
+      <!-- Cards ad -->
+      <div id="ad-cards-section" class="row mt-5">
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+          <div class="card mt-3">
+            <div
+              class="head-card align-items-end d-flex justify-content-end"
+              style="background-image: url(./images/index-img-card.svg);"
+            ></div>
+            <div class="body-card px-3">
+              <div class="d-flex justify-content-between mt-3">
+                <h6>ملابس تركية أطفال لطلبات</h6>
+                <div class="love-icon-card mt-2">
+                  <button>
+                    <i class="far fa-heart mt-1"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex body-card-icon">
+                <div class="d-flex ml-4 align-items-center">
+                  <i class="far fa-user ml-2"></i>
+                  <p>محمد أحمد</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt ml-2"></i>
+                  <p>الرياض</p>
+                </div>
+              </div>
+              <p class="mt-3 content-card-text">
+                هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                شكلي لملئ الفراغات غير مقروء بالضرورة
+              </p>
+              <h5>$50.00</h5>
+              <div class="footer-card d-flex justify-content-between my-3">
+                <div class="d-flex">
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star ml-2 full-star star-icon"></i>
+                  <i class="fas fa-star empty-star star-icon"></i>
+                </div>
+                <div class="d-flex time-publish align-items-center">
+                  <i class="far fa-clock"></i>
+                  <p class="mr-1">منذ اسبوع</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-2 py-1 button-group py-3 px-1">
+              <button type="button" class="btn btn-outline-info rounded-pill">
+                <div class="row inside-button px-2">
+                  <i class="far fa-edit"></i>
+                  <p class="my-0 mx-1">
+                    تعديل
+                  </p>
+                </div>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+                data-toggle="modal"
+                data-target="#add-package"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  <p class="my-0 mx-1">
+                    إضافة باقة
+                  </p>
+                </div>
+              </button>
+              <button
+                onclick="deleteAlert()"
+                type="button"
+                class="btn btn-outline-info rounded-pill"
+              >
+                <div class="row inside-button px-2">
+                  <i class="fas fa-trash" style="color: #ef5252;"></i>
+                  <p class="my-0 mx-1">
+                    حذف
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- wait orders -->
+      <div id="wait-orders-section" class="d-none">
+        <!-- table -->
+        <div class="table-responsive mt-5">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <tr>
+                <th scope="col">كود المعلن</th>
+                <th scope="col">اسم المعلن</th>
+                <th scope="col">رقم الجوال</th>
+                <th scope="col">البريد الإلكتروني</th>
+                <th scope="col" class="text-center">الاعدادات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>@d_20</td>
+                <td>محمد أحمد</td>
+                <td>05942365302</td>
+                <td>ml@gmail.com</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>@d_20</td>
+                <td>محمد أحمد</td>
+                <td>05942365302</td>
+                <td>ml@gmail.com</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>@d_20</td>
+                <td>محمد أحمد</td>
+                <td>05942365302</td>
+                <td>ml@gmail.com</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>@d_20</td>
+                <td>محمد أحمد</td>
+                <td>05942365302</td>
+                <td>ml@gmail.com</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>@d_20</td>
+                <td>محمد أحمد</td>
+                <td>05942365302</td>
+                <td>ml@gmail.com</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>@d_20</td>
+                <td>محمد أحمد</td>
+                <td>05942365302</td>
+                <td>ml@gmail.com</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- review works -->
+      <div id="review-works-section" class="d-none">
+        <!-- table -->
+        <div class="table-responsive mt-5">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <tr>
+                <th scope="col">اسم صاحب الإعلان</th>
+                <th scope="col">كود الإعلان</th>
+                <th scope="col">رقم الجوال</th>
+                <th scope="col">البريد الإلكتروني</th>
+                <th scope="col">قيمه العمولة</th>
+                <th scope="col">المرفقات</th>
+                <th scope="col" class="text-center">الاعدادات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>admon</td>
+                <td>HKBC8860</td>
+                <td>0128076223</td>
+                <td>admin@admin.com</td>
+                <td>10</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>admon</td>
+                <td>HKBC8860</td>
+                <td>0128076223</td>
+                <td>admin@admin.com</td>
+                <td>10</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>admon</td>
+                <td>HKBC8860</td>
+                <td>0128076223</td>
+                <td>admin@admin.com</td>
+                <td>10</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>admon</td>
+                <td>HKBC8860</td>
+                <td>0128076223</td>
+                <td>admin@admin.com</td>
+                <td>10</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>admon</td>
+                <td>HKBC8860</td>
+                <td>0128076223</td>
+                <td>admin@admin.com</td>
+                <td>10</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>admon</td>
+                <td>HKBC8860</td>
+                <td>0128076223</td>
+                <td>admin@admin.com</td>
+                <td>10</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill px-2 px-sm-4 green-btn border-0 ml-2"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      تعديل
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill px-2 px-sm-4 red-btn border-0"
+                      onclick="deleteAlert()"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <h4 class="modal-title">تعديل المعلن</h4>
+          </div>
+          <div class="row modal-body mx-auto edit-modal-content">
+            <div class="col-6 my-2">
+              <h6 class="text-right input-label">الاسم</h6>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+            </div>
+            <div class="col-6 my-2">
+              <h6 class="text-right input-label">البريد المعلن</h6>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+            </div>
+            <div class="col-6 my-2">
+              <h6 class="text-right input-label">الجوال</h6>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+            </div>
+            <div class="col-6 my-2">
+              <h6 class="text-right input-label">العنوان</h6>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-warning rounded-pill px-5 py-2"
+              data-dismiss="modal"
+            >
+              تعديل
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="add-package"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered w-75" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <h4 class="modal-title">إضافة باقة للإعلان عقار:</h4>
+          </div>
+          <div class="row modal-body mx-auto edit-modal-content">
+            <div class="col">
+              <h6 class="text-right input-label">باقة الأعلان:</h6>
+              <select
+                id="first-num"
+                class="form-control w-75 h-25 px-3 select2"
+                name="first-num"
+                style="width: 100%;"
+              >
+                <option class="h-25">اختر باقه... </option>
+                <option class="h-25">الاسم1</option>
+                <option class="h-25">2الاسم</option>
+                <option class="h-25">3الاسم</option>
+                <option class="h-25">4الاسم</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-warning rounded-pill px-5 py-2"
+              data-dismiss="modal"
+            >
+              اضف الباقه
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="./assets/js/nav-footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2();
+
+        $('b[role="presentation"]').hide();
+
+        $(".select2-selection__arrow").append(
+          '<i class="fa fa-angle-down"></i>'
+        );
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#dtHorizontalExample").DataTable({
+          scrollX: true,
+        });
+        $(".dataTables_length").addClass("bs-select");
+      });
+    </script>
+    <script>
+      function deleteAlert() {
+        swal({
+          title: "هل انت متأكد تريد الحذف؟",
+          text: "سيتم حذف الاعلان",
+          icon: "warning",
+          dangerMode: true,
+          buttons: {
+            cancel: {
+              text: "الغاء",
+              value: null,
+              visible: true,
+              className: "rounded-pill",
+              closeModal: true,
+            },
+            confirm: {
+              text: "حذف",
+              value: true,
+              visible: true,
+              className: "rounded-pill",
+              closeModal: true,
+            },
+          },
+        }).then((willDelete) => {
+          if (willDelete) {
+            swal({
+              title: "تم الحذف",
+              text: "تم حذف الاعلان",
+              icon: "success",
+              button: {
+                text: "تم",
+                className: "rounded-pill",
+              },
+            });
+          }
+        });
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".love-icon-card").click(function (e) {
+          $(this).toggleClass("active");
+        });
+        $("#recent-ads").click(function (e) {
+          $("#recent-ads").addClass("active").siblings().removeClass("active");
+          $("#ad-cards-section").removeClass("d-none");
+          $("#wait-orders-section").addClass("d-none");
+          $("#review-works-section").addClass("d-none");
+        });
+        $("#wait-orders").click(function (e) {
+          $("#wait-orders").addClass("active").siblings().removeClass("active");
+          $("#wait-orders-section").removeClass("d-none");
+          $("#ad-cards-section").addClass("d-none");
+          $("#review-works-section").addClass("d-none");
+        });
+        $("#review-works").click(function (e) {
+          $("#review-works")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+          $("#review-works-section").removeClass("d-none");
+          $("#ad-cards-section").addClass("d-none");
+          $("#wait-orders-section").addClass("d-none");
+        });
+      });
+    </script>
+  </body>
+</html>
