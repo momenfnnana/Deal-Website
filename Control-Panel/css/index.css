@@ -12,6 +12,7 @@ body {
 
 .head {
   width: "100%";
+  background-color: #ebebeb;
 }
 
 .head .head-title {
@@ -179,5 +180,14 @@ td {
 .modal-title {
   color: #707070;
   font-weight: bolder;
+}
+
+.btn-info {
+  background-color: #15cbcb;
+}
+
+.terms {
+  background-color: #efe817;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
